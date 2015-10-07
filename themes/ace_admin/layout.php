@@ -24,6 +24,15 @@
 			font-size: 18px;
 			font-weight: normal;
 		}
+		
+		.flag{display:block; float:left; width:24px; height:24px; overflow:hidden; text-indent:1000%; padding:0 3px; margin:0 0 0 5px; }
+		.flag.th{background:url(media/images/th.png) center center no-repeat;}
+		.flag.en{background:url(media/images/en.png) center center no-repeat;}
+		
+		*:first-child+html .flag{ text-indent:0; line-height:0; font-size:0; overflow:hidden}/*ie7 hack */
+		.flag.active{background-color:#0080C0;}
+		.trlang td,.trlang th{border-bottom:solid 3px #0080C0;}
+		table.form .trlang td, .form .trlang th{padding:0}
 		</style>
 		
 		<!--[if IE 7]>

@@ -36,7 +36,7 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<!--PAGE CONTENT BEGINS-->
-				<form class="form-horizontal" method="post" action="patients/admin/patients/save/<?php echo $rs->id?>" enctype="multipart/form-data">
+				<form class="form-horizontal" method="post" action="staffs/admin/staffs/save/<?php echo $rs->id?>" enctype="multipart/form-data">
 					
 					<div class="control-group">
 					    <label class="control-label" for="name">ภาษา</label>
@@ -50,7 +50,7 @@
 			            <label class="control-label" for="id-input-file-1">รูปภาพ</label>
 			            <div class="controls">
 			                <?php if($rs->image):?>
-			                <img class="img" style="width:100px;" src="<?php echo (is_file('uploads/patients/'.$rs->image))? 'uploads/patients/'.$rs->image : 'media/images/webboard/noavatar.gif' ?>"  /> <br><br>
+			                <img class="img" style="width:100px;" src="<?php echo (is_file('uploads/staffs/'.$rs->image))? 'uploads/staffs/'.$rs->image : 'media/images/webboard/noavatar.gif' ?>"  /> <br><br>
 			                <?php endif;?>
 			                <div class="input-xxlarge">
 			                    <input type="file" id="id-input-file-1" name="image"/>
@@ -74,13 +74,13 @@
 					    </div>
 					</div>
 					
-					<div class="control-group">
+					<!-- <div class="control-group">
 					    <label class="control-label" for="email">รายละเอียด</label>
 					    <div class="controls">
 					    	<textarea rel="th" name="detail[th]" class="form-control span5" rows="3"><?php echo lang_decode($rs->detail,'th')?></textarea>
 					    	<textarea rel="en" name="detail[en]" class="form-control span5" rows="3"><?php echo lang_decode($rs->detail,'en')?></textarea>
 					    </div>
-					</div>
+					</div> -->
 					
 					<div class="form-actions">
 						<?php echo @form_referer() ?>

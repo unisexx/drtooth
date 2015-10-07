@@ -25,7 +25,7 @@
 <div class="page-content">
 	<div class="page-header position-relative">
 		<h1>
-			คนไข้ของเรา
+			คุยกับหมอฟัน
 			<!-- <small>
 				<i class="icon-double-angle-right"></i>
 				<?=@$_GET['category']?>
@@ -36,7 +36,7 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<!--PAGE CONTENT BEGINS-->
-				<form class="form-horizontal" method="post" action="patients/admin/patients/save/<?php echo $rs->id?>" enctype="multipart/form-data">
+				<form class="form-horizontal" method="post" action="talks/admin/talks/save/<?php echo $rs->id ?>" enctype="multipart/form-data">
 					
 					<div class="control-group">
 					    <label class="control-label" for="name">ภาษา</label>
@@ -47,43 +47,58 @@
 					</div>
 					
 					<div class="control-group">
-			            <label class="control-label" for="id-input-file-1">รูปภาพ</label>
+			            <label class="control-label" for="id-input-file-1">ภาพประกอบข่าว</label>
 			            <div class="controls">
 			                <?php if($rs->image):?>
-			                <img class="img" style="width:100px;" src="<?php echo (is_file('uploads/patients/'.$rs->image))? 'uploads/patients/'.$rs->image : 'media/images/webboard/noavatar.gif' ?>"  /> <br><br>
+			                <img class="img" style="width:100px;" src="<?php echo (is_file('uploads/talks/'.$rs->image))? 'uploads/talks/'.$rs->image : 'media/images/webboard/noavatar.gif' ?>"  /> <br><br>
 			                <?php endif;?>
-			                <div class="input-xxlarge">
+			                <div class="input-xxlarge" style="width:544px;">
 			                    <input type="file" id="id-input-file-1" name="image"/>
 			                </div>
 			            </div>
 			        </div>
 					
-					<!-- select box -->
-			        <!-- <div class="control-group">
-			            <label class="control-label" for="username">กลุ่ม</label>
+					<div class="control-group">
+						<label class="control-label">หัวข้อ</label>
+						<div class="controls">
+							<input  rel="th" id="name" class="span5" type="text" name="title[th]" value="<?php echo lang_decode($rs->title,'th')?>">
+					        <input  rel="en" id="name" class="span5" type="text" name="title[en]" value="<?php echo lang_decode($rs->title,'en')?>">
+						</div>
+					</div>
+					
+					<div class="control-group">
+			            <label class="control-label" for="form-field-9">รายละเอียด</label>
 			            <div class="controls">
-			                <?php echo form_dropdown('user_type_id',get_option('id','name','user_types','order by id asc'),$user->user_type_id,'');?>
+			            	<div rel="th"><textarea name="detail[th]" class="full tinymce"><?php echo lang_decode($rs->detail,'th')?></textarea></div>
+							<div rel="en"><textarea name="detail[en]" class="full tinymce"><?php echo lang_decode($rs->detail,'en')?></textarea></div>
 			            </div>
-			        </div> -->
-					
-					<div class="control-group">
-					    <label class="control-label" for="name">ชื่อ - นามสกุล</label>
-					    <div class="controls">
-					      <input  rel="th" id="name" class="span5" type="text" name="name[th]" value="<?php echo lang_decode($rs->name,'th')?>">
-					      <input  rel="en" id="name" class="span5" type="text" name="name[en]" value="<?php echo lang_decode($rs->name,'en')?>">
-					    </div>
+			        </div>
+			        
+			        <div class="control-group">
+						<label class="control-label">โพสต์โดย</label>
+						<div class="controls">
+							<input  rel="th" id="post_by" class="span5" type="text" name="post_by[th]" value="<?php echo lang_decode($rs->post_by,'th')?>">
+					        <input  rel="en" id="post_by" class="span5" type="text" name="post_by[en]" value="<?php echo lang_decode($rs->post_by,'en')?>">
+						</div>
 					</div>
 					
-					<div class="control-group">
-					    <label class="control-label" for="email">รายละเอียด</label>
-					    <div class="controls">
-					    	<textarea rel="th" name="detail[th]" class="form-control span5" rows="3"><?php echo lang_decode($rs->detail,'th')?></textarea>
-					    	<textarea rel="en" name="detail[en]" class="form-control span5" rows="3"><?php echo lang_decode($rs->detail,'en')?></textarea>
-					    </div>
-					</div>
+					<!-- <div class="control-group">
+						<label class="control-label">ไฟล์แนบ</label>
+						<div class="controls">
+							<input class="input-xxlarge" type="text" name="files" value="<?php echo $rs->files?>"/>
+							<input class="btn btn-mini btn-info" type="button" name="browse" value="เลือกไฟล์" onclick="browser($(this).prev(),'file')" />
+						</div>
+					</div> -->
+					
+					<!-- <div class="control-group">
+						<label class="control-label">หมวดหมู่</label>
+						<div class="controls">
+							<?php// echo form_dropdown('category_id',$rs->category->get_option(),$rs->category_id,'');?>
+						</div>
+					</div> -->
 					
 					<div class="form-actions">
-						<?php echo @form_referer() ?>
+						<?php echo form_referer() ?>
 						<button class="btn btn-large btn-info" type="submit">
 							<i class="icon-ok bigger-110"></i>บันทึก
 						</button>
@@ -92,6 +107,8 @@
 						<button class="btn btn-large" type="reset">
 							<i class="icon-undo bigger-110"></i>รีเซ็ต
 						</button>
+                                                &nbsp; &nbsp; &nbsp;
+						<a class="btn btn-large" href="talks/admin/talks" >กลับ</a>
 					</div>
 				
 				</form>
@@ -105,7 +122,8 @@
 <script type="text/javascript" src="media/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript" src="media/tiny_mce/config.js"></script>
 <script type="text/javascript">
-// tiny('detail');
+tiny('detail[th],detail[en]');
+
 $(function() {
 	$("[rel=en]").hide();
 	$(".lang a").click(function(){

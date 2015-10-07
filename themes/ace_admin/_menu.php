@@ -129,7 +129,7 @@
 </li>
 
 
-<li <?=@$_GET['module'] == 'คุยกับหมอฟัน'?'class="active open"':'';?>>
+<li <?=@$this->uri->segment(1) == 'staffs' || @$this->uri->segment(1) == 'talks' ?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
 		<i class="fa fa-file-pdf-o"></i>
 		<span class="menu-text"> คุยกับหมอฟัน </span>
@@ -145,15 +145,15 @@
 			</a>
 		</li>
 
-		<li <?=@$_GET['module'] == 'คุยกับหมอฟัน' && @$_GET['category'] == 'ทันตกรรมทั่วไป'?'class="active open"':'';?>>
-			<a href="contents/admin/contents/form?module=คุยกับหมอฟัน&category=คุยกับหมอฟัน">
+		<li <?=@$this->uri->segment(1) == 'talks'?'class="active"':'';?>>
+			<a href="talks/admin/talks">
 				<i class="icon-double-angle-right"></i>
 				คุยกับหมอฟัน
 			</a>
 		</li>
 		
-		<li <?=@$_GET['module'] == 'คุยกับหมอฟัน' && @$_GET['category'] == 'ทันตกรรมจัดฟัน'?'class="active open"':'';?>>
-			<a href="contents/admin/contents/form?module=คุยกับหมอฟัน&category=ทีมงานของเรา">
+		<li <?=@$this->uri->segment(1) == 'staffs'?'class="active"':'';?>>
+			<a href="staffs/admin/staffs">
 				<i class="icon-double-angle-right"></i>
 				ทีมงานของเรา
 			</a>
@@ -162,7 +162,7 @@
 </li>
 
 
-<li <?=@$this->uri->segment(1) == 'user_permission'?'class="active"':'';?>>
+<li <?=@$this->uri->segment(1) == 'patients'?'class="active"':'';?>>
 	<a href="patients/admin/patients">
 		<i class="fa fa-globe"></i>
 		<span class="menu-text"> คนไข้ของเรา </span>

@@ -4,7 +4,7 @@
 			<a href="#" class="brand">
 				<small>
 					<i class="icon-leaf"></i>
-					เว็บไซต์งานบริหารกองทุน
+					DrTooth Dental Clinic
 				</small>
 			</a><!--/.brand-->
 

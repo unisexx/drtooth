@@ -1,5 +1,5 @@
 <?php
-class Patients extends Admin_Controller
+class Staffs extends Admin_Controller
 {
 	
 	public function __construct()
@@ -9,7 +9,7 @@ class Patients extends Admin_Controller
 	
 	public function index()
 	{
-		$data['rs'] = new Patient();
+		$data['rs'] = new Staff();
 		// if(!empty($_POST['search']))$data['users']->where("username like '%".$_POST['search']."%'");
 		$data['rs']->get();
 		$this->template->append_metadata(js_checkbox('approve'));
@@ -18,7 +18,7 @@ class Patients extends Admin_Controller
 	
 	public function form($id = NULL)
 	{	
-		$data['rs'] = new Patient($id);
+		$data['rs'] = new Staff($id);
 		$this->template->build('admin/form',$data);
 	}
 	
@@ -26,13 +26,13 @@ class Patients extends Admin_Controller
 	{
 		if($_POST)
 		{
-			$rs = new Patient($id);
+			$rs = new Staff($id);
 			if($_FILES['image']['name'])
 			{
 				if($rs->id){
-					$rs->delete_file($rs->id,'uploads/patients/','image');
+					$rs->delete_file($rs->id,'uploads/staffs/','image');
 				}
-				$_POST['image'] = $rs->upload($_FILES['image'],'uploads/patients/',180,220);
+				$_POST['image'] = $rs->upload($_FILES['image'],'uploads/staffs/',180,220);
 			}
 			$_POST['name'] = lang_encode($_POST['name']);
 			$_POST['detail'] = lang_encode($_POST['detail']);
@@ -40,25 +40,25 @@ class Patients extends Admin_Controller
 			$rs->save();
 			set_notify('success', lang('save_data_complete'));	
 		}
-		redirect('patients/admin/patients');
+		redirect('staffs/admin/staffs');
 	}
 	
 	public function delete($id)
 	{
 		if($id)
 		{
-			$rs = new Patient($id);
+			$rs = new Staff($id);
 			$rs->delete();	
 			set_notify('success', lang('delete_data_complete'));	
 		}
-		redirect('patients/admin/patients');
+		redirect('staffs/admin/staffs');
 	}
 
 	function approve($id)
 	{
 		if($_POST)
 		{
-			$rs = new Patient($id);
+			$rs = new Staff($id);
 			$rs->from_array($_POST);
 			$rs->save();
 		}

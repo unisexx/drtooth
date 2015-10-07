@@ -8,7 +8,7 @@
 				<i class="icon-angle-right arrow-icon"></i>
 			</span>
 		</li>
-		<li class="active">คนไข้ของเรา</li>
+		<li class="active">ทีมงานของเรา</li>
 	</ul><!--.breadcrumb-->
 
 	<!-- <div class="nav-search" id="nav-search">
@@ -52,7 +52,7 @@
                     <th width="70">แสดง</th>
 					<th>รูป</th>
 					<th>ชื่อ</th>
-                    <th><a class="btn btn-mini btn-primary" href="patients/admin/patients/form"><i class="icon-pencil"></i> เพิ่มรายการ </a></th>
+                    <th><a class="btn btn-mini btn-primary" href="staffs/admin/staffs/form"><i class="icon-pencil"></i> เพิ่มรายการ </a></th>
                 </tr>
             </thead>
                                     
@@ -65,19 +65,19 @@
 							<span class="lbl"></span>
 						</label>
 					</td>
-					<td><img src="uploads/patients/<?php echo $row->image?>" width="90"></td>
+					<td><img src="uploads/staffs/<?php echo $row->image?>" width="90"></td>
 					<td><?php echo lang_decode($row->name,'th')?></td>
                     <td>
                         <div class='hidden-phone visible-desktop btn-group'>
-                            <a href="patients/admin/patients/form/<?php echo $row->id?>" class='btn btn-mini btn-info'><i class='icon-edit'></i></a>
-                            <a class='btn btn-mini btn-danger' href="patients/admin/patients/delete/<?php echo $row->id?>" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')"><i class='icon-trash'></i></a>
+                            <a href="staffs/admin/staffs/form/<?php echo $row->id?>" class='btn btn-mini btn-info'><i class='icon-edit'></i></a>
+                            <a class='btn btn-mini btn-danger' href="staffs/admin/staffs/delete/<?php echo $row->id?>" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')"><i class='icon-trash'></i></a>
                         </div>
                         <div class='hidden-desktop visible-phone'>
                             <div class="inline position-relative">
                                 <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down icon-only"></i></button>
                                 <ul class="dropdown-menu dropdown-icon-only dropdown-yellow pull-right dropdown-caret dropdown-close">
-                                    <li><a href="patients/admin/patients/form/<?php echo $row->id?>" class="tooltip-success" data-rel="tooltip" title="Edit" data-placement="left"><span class="green"><i class="icon-edit"></i></span></a></li>
-                                    <li><a href="patients/admin/patients/delete/<?php echo $row->id?>" class="tooltip-error" data-rel="tooltip" title="Delete" data-placement="left" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')"><span class="red"><i class="icon-trash"></i></span> </a></li>
+                                    <li><a href="staffs/admin/staffs/form/<?php echo $row->id?>" class="tooltip-success" data-rel="tooltip" title="Edit" data-placement="left"><span class="green"><i class="icon-edit"></i></span></a></li>
+                                    <li><a href="staffs/admin/staffs/delete/<?php echo $row->id?>" class="tooltip-error" data-rel="tooltip" title="Delete" data-placement="left" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')"><span class="red"><i class="icon-trash"></i></span> </a></li>
                                 </ul>
                             </div>
                         </div>
