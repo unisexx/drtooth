@@ -8,7 +8,7 @@
 				<i class="icon-angle-right arrow-icon"></i>
 			</span>
 		</li>
-		<li class="active">เว็บไซต์แนะนำ</li>
+		<li class="active">ภาพกิจกรรม</li>
 	</ul><!--.breadcrumb-->
 
 	<!-- <div class="nav-search" id="nav-search">
@@ -25,7 +25,7 @@
 <div class="page-content">
 	<div class="page-header position-relative">
 		<h1>
-			เว็บไซต์แนะนำ
+			อัลบัม
 			<small>
 				<i class="icon-double-angle-right"></i>
 				ฟอร์ม
@@ -50,10 +50,19 @@
 					</div> -->
 					
 					<div class="control-group">
+					    <label class="control-label" for="name">ภาษา</label>
+					    <div class="controls lang">
+					      <a href="th" class="active flag th">ไทย</a>
+					      <a href="en" class="flag en">อังกฤษ</a>
+					    </div>
+					</div>
+					
+					<div class="control-group">
 						<label class="control-label">ชื่ออัลบั้ม</label>
 	
 						<div class="controls">
-							<input class="input-xxlarge" type="text" name="name" value="<?php echo $category->name?>"/>
+							<input rel="th" class="input-xxlarge" type="text" name="name[th]" value="<?php echo lang_decode($category->name,'th')?>"/>
+							<input rel="en" class="input-xxlarge" type="text" name="name[en]" value="<?php echo lang_decode($category->name,'en')?>"/>
 						</div>
 					</div>
 					
@@ -83,6 +92,13 @@
 <!-- Load TinyMCE -->
 <script type="text/javascript">
 $(function() {
+	$("[rel=en]").hide();
+	$(".lang a").click(function(){
+		$("[rel=" + $(this).attr("href") + "]").show().siblings().hide();
+		$(this).addClass('active').siblings().removeClass('active');
+		return false;
+	})
+	
 	$('#id-input-file-1 , #id-input-file-2').ace_file_input({
 		no_file:'ไม่มีไฟล์แนบ...',
 		btn_choose:'แนบไฟล์',

@@ -15,10 +15,19 @@
 				<form class="form-horizontal" method="post" action="categories/admin/categories/save/<?php echo $category->id?>" enctype="multipart/form-data">
 					
 					<div class="control-group">
+					    <label class="control-label" for="name">ภาษา</label>
+					    <div class="controls lang">
+					      <a href="th" class="active flag th">ไทย</a>
+					      <a href="en" class="flag en">อังกฤษ</a>
+					    </div>
+					</div>
+					
+					<div class="control-group">
 						<label class="control-label">ชื่อหมวดหมู่</label>
 	
 						<div class="controls">
-							<input class="input-xxlarge" type="text" name="name" value="<?php echo $category->name?>"/>
+							<input rel="th" class="input-xxlarge" type="text" name="name[th]" value="<?php echo lang_decode($category->name,'th')?>"/>
+							<input rel="en" class="input-xxlarge" type="text" name="name[en]" value="<?php echo lang_decode($category->name,'en')?>"/>
 						</div>
 					</div>
 					
@@ -42,3 +51,14 @@
 		</div><!--/.span-->
 	</div><!--/.row-fluid-->
 </div>
+
+<script type="text/javascript">
+$(function() {
+	$("[rel=en]").hide();
+	$(".lang a").click(function(){
+		$("[rel=" + $(this).attr("href") + "]").show().siblings().hide();
+		$(this).addClass('active').siblings().removeClass('active');
+		return false;
+	})
+});
+</script>

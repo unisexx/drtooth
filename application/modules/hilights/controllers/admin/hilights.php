@@ -3,9 +3,9 @@ Class Hilights extends Admin_Controller{
 	
 	function __construct(){
 		parent::__construct();	
-		if(!permission('hilight','full')):
-			redirect('front/admin/front');
-		endif;
+		// if(!permission('hilight','full')):
+			// redirect('front/admin/front');
+		// endif;
 	}
 	
 	function index(){

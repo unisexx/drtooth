@@ -74,14 +74,6 @@
 			            </div>
 			        </div>
 			        
-			        <div class="control-group">
-						<label class="control-label">โพสต์โดย</label>
-						<div class="controls">
-							<input  rel="th" id="post_by" class="span5" type="text" name="post_by[th]" value="<?php echo lang_decode($rs->post_by,'th')?>">
-					        <input  rel="en" id="post_by" class="span5" type="text" name="post_by[en]" value="<?php echo lang_decode($rs->post_by,'en')?>">
-						</div>
-					</div>
-					
 					<!-- <div class="control-group">
 						<label class="control-label">ไฟล์แนบ</label>
 						<div class="controls">
@@ -90,12 +82,12 @@
 						</div>
 					</div> -->
 					
-					<!-- <div class="control-group">
+					<div class="control-group">
 						<label class="control-label">หมวดหมู่</label>
 						<div class="controls">
-							<?php// echo form_dropdown('category_id',$rs->category->get_option(),$rs->category_id,'');?>
+							<?php echo form_dropdown('category_id',$rs->category->get_option(),$rs->category_id,'');?>
 						</div>
-					</div> -->
+					</div>
 					
 					<div class="form-actions">
 						<?php echo form_referer() ?>

@@ -124,9 +124,9 @@ if(!function_exists('thumb'))
 {
     function thumb($imgUrl,$width,$height,$zoom_and_crop,$param = NULL){
     	if(strpos($imgUrl, "http://") !== false or strpos($imgUrl, "https://") !== false){
-    		return "<img ".$param." src=".site_url("themes/colly/timthumb.php?src=".$imgUrl."&zc=".$zoom_and_crop."&w=".$width."&h=".$height)." width=".$width." height=".$height.">";
+    		return "<img ".$param." src=".site_url("media/timthumb/timthumb.php?src=".$imgUrl."&zc=".$zoom_and_crop."&w=".$width."&h=".$height)." width=".$width." height=".$height.">";
     	}else{
-    		return "<img ".$param." src=".site_url("themes/colly/timthumb.php?src=".site_url($imgUrl)."&zc=".$zoom_and_crop."&w=".$width."&h=".$height)."  width=".$width." height=".$height.">";
+    		return "<img ".$param." src=".site_url("media/timthumb/timthumb.php?src=".site_url($imgUrl)."&zc=".$zoom_and_crop."&w=".$width."&h=".$height)."  width=".$width." height=".$height.">";
     	}
         
     }

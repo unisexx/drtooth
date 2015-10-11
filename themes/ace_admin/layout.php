@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="themes/ace_admin/assets/css/colorbox.css" />
 		
 		<!--font-awesome-4.2.0 styles-->
-		<link rel="stylesheet" href="media/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="media/font-awesome-4.4.0/css/font-awesome.min.css" />
 		<style type="text/css">
 		.nav-list>li>a>[class*="fa"]:first-child {
 			display: inline-block;
@@ -33,6 +33,8 @@
 		.flag.active{background-color:#0080C0;}
 		.trlang td,.trlang th{border-bottom:solid 3px #0080C0;}
 		table.form .trlang td, .form .trlang th{padding:0}
+		
+		.form-horizontal .control-label{font-weight: bold;}
 		</style>
 		
 		<!--[if IE 7]>

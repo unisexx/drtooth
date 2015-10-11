@@ -37,10 +37,9 @@
 						<tr>
 							<th width="70">แสดง</th>
 							<th>หัวข้อ</th>
-							<!-- <th><a class="btn btn-mini iframe" href="categories/admin/categories/downloads?iframe=true&width=90%&height=90%">หมวดหมู่</a></th> -->
+							<th><a class="btn btn-mini iframe" href="categories/admin/categories/talks?iframe=true&width=90%&height=90%">หมวดหมู่</a></th>
 							<th width="105">
 								<a class="btn btn-mini btn-info" href="talks/admin/talks/form">เพิ่มรายการ</a>
-								<!--<a href="infos/admin/infos/get_new" target="_blank"><i class="fa fa-rss-square fa-2x" style="color:orange; vertical-align: middle;"></i></a>-->
 							</th>
 						</tr>
 					</thead>
@@ -55,7 +54,7 @@
 								</label>
 							</td>
 							<td><?=lang_decode($row->title,'th')?></td>
-							<!-- <td><?=$row->category->name?></td> -->
+							<td><?=lang_decode($row->category->name,'th')?></td>
 							<td class="td-actions">
 								<div class="hidden-phone visible-desktop action-buttons">
 									<a class="green" href="talks/admin/talks/form/<?php echo $row->id ?>">

@@ -32,10 +32,11 @@ class Patients extends Admin_Controller
 				if($rs->id){
 					$rs->delete_file($rs->id,'uploads/patients/','image');
 				}
-				$_POST['image'] = $rs->upload($_FILES['image'],'uploads/patients/',180,220);
+				$_POST['image'] = $rs->upload($_FILES['image'],'uploads/patients/');
 			}
 			$_POST['name'] = lang_encode($_POST['name']);
 			$_POST['detail'] = lang_encode($_POST['detail']);
+			$_POST['status'] = 'approve';
 			$rs->from_array($_POST);
 			$rs->save();
 			set_notify('success', lang('save_data_complete'));	

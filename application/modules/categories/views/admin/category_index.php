@@ -34,7 +34,7 @@
 					<tbody>
 						<?php foreach($categories as $row): ?>
 						<tr>
-							<td><?php echo $row->name?></td>
+							<td><?php echo lang_decode($row->name,'th')?></td>
 							<td class="td-actions">
 								<div class="hidden-phone visible-desktop action-buttons">
 									<a class="green" href="categories/admin/categories/<?php echo $module ?>/form/<?php echo $row->id ?>">

@@ -36,7 +36,7 @@
     
 <li <?=@$this->uri->segment(1) == 'hilights'?'class="active"':'';?>>
 	<a href="hilights/admin/hilights">
-		<i class="fa fa-file-image-o"></i>
+		<i class="fa fa-star"></i>
 		<span class="menu-text"> ไฮไลท์ </span>
 	</a>
 </li>
@@ -44,7 +44,7 @@
 
 <li <?=@$_GET['module'] == 'เกี่ยวกับเรา'?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
-		<i class="fa fa-file-pdf-o"></i>
+		<i class="fa fa-hospital-o"></i>
 		<span class="menu-text"> เกี่ยวกับเรา </span>
 
 		<b class="arrow icon-angle-down"></b>
@@ -77,7 +77,7 @@
 
 <li <?=@$_GET['module'] == 'บริการทางทันตกรรม'?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
-		<i class="fa fa-file-pdf-o"></i>
+		<i class="fa fa-medkit"></i>
 		<span class="menu-text"> บริการทางทันตกรรม </span>
 
 		<b class="arrow icon-angle-down"></b>
@@ -129,17 +129,17 @@
 </li>
 
 
-<li <?=@$this->uri->segment(1) == 'staffs' || @$this->uri->segment(1) == 'talks' ?'class="active open"':'';?>>
+<li <?=@$this->uri->segment(1) == 'staffs' || @$this->uri->segment(1) == 'talks' || @$this->uri->segment(1) == 'dentists' ?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
-		<i class="fa fa-file-pdf-o"></i>
+		<i class="fa fa-user-md"></i>
 		<span class="menu-text"> คุยกับหมอฟัน </span>
 
 		<b class="arrow icon-angle-down"></b>
 	</a>
 
 	<ul class="submenu">
-		<li <?=@$_GET['module'] == 'คุยกับหมอฟัน' && @$_GET['category'] == 'บริการทั้งหมด'?'class="active open"':'';?>>
-			<a href="contents/admin/contents/form?module=คุยกับหมอฟัน&category=ทีมทันตแพทย์ของเรา">
+		<li <?=@$this->uri->segment(1) == 'dentists'?'class="active"':'';?>>
+			<a href="dentists/admin/dentists">
 				<i class="icon-double-angle-right"></i>
 				ทีมทันตแพทย์ของเรา
 			</a>
@@ -164,15 +164,23 @@
 
 <li <?=@$this->uri->segment(1) == 'patients'?'class="active"':'';?>>
 	<a href="patients/admin/patients">
-		<i class="fa fa-globe"></i>
+		<i class="fa fa-wheelchair"></i>
 		<span class="menu-text"> คนไข้ของเรา </span>
 	</a>
 </li>
 
 
-<li <?=@$this->uri->segment(1) == 'user_permission'?'class="active"':'';?>>
-	<a href="users/admin/users">
-		<i class="fa fa-globe"></i>
+<li <?=@$this->uri->segment(1) == 'galleries'?'class="active"':'';?>>
+	<a href="galleries/admin/categories">
+		<i class="fa fa-picture-o"></i>
+		<span class="menu-text"> ภาพกิจกรรม </span>
+	</a>
+</li>
+
+
+<li <?=@$this->uri->segment(1) == 'contacts'?'class="active"':'';?>>
+	<a href="contacts/admin/contacts">
+		<i class="fa fa-envelope-o"></i>
 		<span class="menu-text"> ติดต่อเรา </span>
 	</a>
 </li>

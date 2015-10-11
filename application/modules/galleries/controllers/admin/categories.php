@@ -34,6 +34,7 @@ class categories extends Admin_Controller
 		if($_POST)
 		{
 			$category = new Category($id);
+			$_POST['name'] = lang_encode($_POST['name']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			$_POST['status'] = "approve";
 			$category->from_array($_POST);

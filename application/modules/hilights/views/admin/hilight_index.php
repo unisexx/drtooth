@@ -94,7 +94,7 @@
 
 										<ul class="dropdown-menu dropdown-icon-only dropdown-yellow pull-right dropdown-caret dropdown-close">
 											<li>
-												<a href="hilights/admin/hilights/delete/<?=$row->id?>" class="tooltip-success" data-rel="tooltip" title="Edit">
+												<a href="hilights/admin/hilights/form/<?php echo $row->id ?>" class="tooltip-success" data-rel="tooltip" title="Edit">
 													<span class="green">
 														<i class="icon-edit bigger-120"></i>
 													</span>

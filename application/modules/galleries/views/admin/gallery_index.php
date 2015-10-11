@@ -8,7 +8,7 @@
 				<i class="icon-angle-right arrow-icon"></i>
 			</span>
 		</li>
-		<li class="active">ภาพกิจกรรม/วิดีโอ</li>
+		<li class="active">ภาพกิจกรรม</li>
 	</ul><!--.breadcrumb-->
 
 	<!-- <div class="nav-search" id="nav-search">
@@ -29,7 +29,7 @@
 			ภาพกิจกรรม
 			<small>
 				<i class="icon-double-angle-right"></i>
-				<?php echo $categories->name ?>
+				<?php echo lang_decode($categories->name,'th') ?>
 			</small>
 		</h1>
 	</div><!--/.page-header-->
@@ -78,7 +78,8 @@
 				<?foreach($galleries as $item):?>
 				<li>
 					<a href="uploads/gallery/<?=$item->image?>" data-rel="colorbox">
-						<img src="media/timthumb/timthumb.php?src=uploads/gallery/<?=$item->image?>&h=100"/>
+						<!-- <img src="media/timthumb/timthumb.php?src=uploads/gallery/<?=$item->image?>&h=100"/> -->
+						<?php echo thumb('uploads/gallery/'.$item->image,'',100,0)?>
 					</a>
 
 					<div class="tools tools-bottom">

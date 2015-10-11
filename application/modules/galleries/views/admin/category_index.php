@@ -8,7 +8,7 @@
 				<i class="icon-angle-right arrow-icon"></i>
 			</span>
 		</li>
-		<li class="active">ภาพกิจกรรม/วิดีโอ</li>
+		<li class="active">ภาพกิจกรรม</li>
 	</ul><!--.breadcrumb-->
 
 	<!-- <div class="nav-search" id="nav-search">
@@ -23,7 +23,7 @@
 </div>
 
 <div class="page-content">
-	<div class="page-header position-relative">
+	<!-- <div class="page-header position-relative">
 		<h1>
 			ภาพกิจกรรม
 			<small>
@@ -31,7 +31,7 @@
 				Static &amp; Dynamic Tables
 			</small>
 		</h1>
-	</div>
+	</div> -->
 	<!--/.page-header-->
 	
 	
@@ -55,7 +55,7 @@
 						<tr>
 							<th width="70">แสดง</th>
 							<th>ชื่อกิจกรรม</th>
-							<th>จำนวน</th>
+							<th>จำนวนรูป</th>
 							<th width="90">
 								<a class="btn btn-mini btn-info" href="galleries/admin/categories/form">เพิ่มรายการ</a>
 							</th>
@@ -71,7 +71,7 @@
 									<span class="lbl"></span>
 								</label>
 							</td>
-							<td><?=$row->name?></td>
+							<td><?=lang_decode($row->name,'th')?></td>
 							<td><?=$row->galleries->result_count();?></td>
 							<td class="td-actions">
 								<div class="hidden-phone visible-desktop action-buttons">

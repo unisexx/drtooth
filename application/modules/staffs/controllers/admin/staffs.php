@@ -36,6 +36,7 @@ class Staffs extends Admin_Controller
 			}
 			$_POST['name'] = lang_encode($_POST['name']);
 			$_POST['detail'] = lang_encode($_POST['detail']);
+			$_POST['status'] = 'approve';
 			$rs->from_array($_POST);
 			$rs->save();
 			set_notify('success', lang('save_data_complete'));	
