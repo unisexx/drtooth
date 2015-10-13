@@ -36,7 +36,7 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<!--PAGE CONTENT BEGINS-->
-				<form class="form-horizontal" method="post" action="contents/admin/contents/save/<?php echo $content->id ?>" enctype="multipart/form-data">
+				<form class="form-horizontal" method="post" action="contents/admin/contents/save/<?php echo $rs->id ?>" enctype="multipart/form-data">
 					
 					<!-- <div class="control-group">
 						<label class="control-label">รูปภาพปก</label>
@@ -50,10 +50,19 @@
 					</div> -->
 					
 					<div class="control-group">
+					    <label class="control-label" for="name">ภาษา</label>
+					    <div class="controls lang">
+					      <a href="th" class="active flag th">ไทย</a>
+					      <a href="en" class="flag en">อังกฤษ</a>
+					    </div>
+					</div>
+					
+					<div class="control-group">
 						<label class="control-label">หัวข้อ</label>
 	
 						<div class="controls">
-							<input class="input-xxlarge" type="text" name="title" value="<?php echo $content->title?>"/>
+							<input rel="th" class="input-xxlarge" type="text" name="title[th]" value="<?php echo lang_decode($rs->title,'th')?>"/>
+							<input rel="en" class="input-xxlarge" type="text" name="title[en]" value="<?php echo lang_decode($rs->title,'en')?>"/>
 						</div>
 					</div>
 					
@@ -69,21 +78,9 @@
 						<label class="control-label">รายละเอียด</label>
 	
 						<div class="controls">
-            <textarea id="detail" name="detail">
-            	<?php echo $content->detail?>
-            </textarea>
-            
-             
-            <script type="text/javascript" src="media/ckeditor/ckeditor.js"></script>
-            <script type="text/javascript" src="media/cke_config.js"></script>		
-            <script type="text/javascript">
-			
-            var editorObj=CKEDITOR.replace( 'detail',cke_config); 
-			
-			
-
-            </script>
-						</div>
+           					<div rel="th"><textarea name="detail[th]" class="tinymce input-xxlarge" rows="10"><?php echo lang_decode($rs->detail,'th')?></textarea></div>
+							<div rel="en"><textarea name="detail[en]" class="tinymce input-xxlarge" rows="10"><?php echo lang_decode($rs->detail,'en')?></textarea></div>
+			            </div>
 					</div>
 					
 					<div class="form-actions">
@@ -111,8 +108,16 @@
 <script type="text/javascript" src="media/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript" src="media/tiny_mce/config.js"></script>
 <script type="text/javascript">
-//tiny('detail');
+tiny('detail[th],detail[en]');
+
 $(function() {
+	$("[rel=en]").hide();
+	$(".lang a").click(function(){
+		$("[rel=" + $(this).attr("href") + "]").show().siblings().hide();
+		$(this).addClass('active').siblings().removeClass('active');
+		return false;
+	})
+	
 	$('#id-input-file-1 , #id-input-file-2').ace_file_input({
 		no_file:'ไม่มีไฟล์แนบ...',
 		btn_choose:'แนบไฟล์',

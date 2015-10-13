@@ -19,8 +19,8 @@ class Contents extends Admin_Controller
 	
 	function form($id=FALSE)
 	{
-		$data['content'] = new Content($id);
-		$data['content']->where('module = "'.$_GET['module'].'" and category = "'.$_GET['category'].'"')->get(1);
+		$data['rs'] = new Content($id);
+		$data['rs']->where('module = "'.$_GET['module'].'" and category = "'.$_GET['category'].'"')->get(1);
 		$this->template->build('admin/form',$data);
 	}
 	
@@ -29,7 +29,9 @@ class Contents extends Admin_Controller
 		if($_POST)
 		{
 			$content = new Content($id);
-            $_POST['slug'] = clean_url($_POST['title']);
+            // $_POST['slug'] = clean_url($_POST['title']);
+            $_POST['title'] = lang_encode($_POST['title']);
+			$_POST['detail'] = lang_encode($_POST['detail']);
 			$_POST['status'] = "approve";
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			if(@$_FILES['image']['name'])

@@ -51,6 +51,13 @@
 	</a>
 
 	<ul class="submenu">
+		<li <?=@$_GET['module'] == 'เกี่ยวกับเรา' && @$_GET['category'] == 'เกี่ยวกับเรา'?'class="active open"':'';?>>
+			<a href="contents/admin/contents/form?module=เกี่ยวกับเรา&category=เกี่ยวกับเรา">
+				<i class="icon-double-angle-right"></i>
+				เกี่ยวกับเรา
+			</a>
+		</li>
+		
 		<li <?=@$_GET['module'] == 'เกี่ยวกับเรา' && @$_GET['category'] == 'บริการของเรา'?'class="active open"':'';?>>
 			<a href="contents/admin/contents/form?module=เกี่ยวกับเรา&category=บริการของเรา">
 				<i class="icon-double-angle-right"></i>
@@ -92,7 +99,7 @@
 		</li>
 
 		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ทันตกรรมทั่วไป'?'class="active open"':'';?>>
-			<a href="contents/admin/contents/form?module=บริการทางทันตกรรม&category=ค่าการศึกษาบุตร">
+			<a href="contents/admin/contents/form?module=บริการทางทันตกรรม&category=ทันตกรรมทั่วไป">
 				<i class="icon-double-angle-right"></i>
 				ทันตกรรมทั่วไป
 			</a>
@@ -105,21 +112,21 @@
 			</a>
 		</li>
 		
-		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ทันตกรรมจัดฟัน'?'class="active open"':'';?>>
+		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ทันตกรรมเพื่อความงาม'?'class="active open"':'';?>>
 			<a href="contents/admin/contents/form?module=บริการทางทันตกรรม&category=ทันตกรรมเพื่อความงาม">
 				<i class="icon-double-angle-right"></i>
 				ทันตกรรมเพื่อความงาม
 			</a>
 		</li>
 		
-		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ทันตกรรมจัดฟัน'?'class="active open"':'';?>>
+		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ทันตกรรมประดิษฐ์และรากเทียม'?'class="active open"':'';?>>
 			<a href="contents/admin/contents/form?module=บริการทางทันตกรรม&category=ทันตกรรมประดิษฐ์และรากเทียม">
 				<i class="icon-double-angle-right"></i>
 				ทันตกรรมประดิษฐ์และรากเทียม
 			</a>
 		</li>
 		
-		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ทันตกรรมจัดฟัน'?'class="active open"':'';?>>
+		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ศัลยกรรมช่องปากและโรคเหงือก'?'class="active open"':'';?>>
 			<a href="contents/admin/contents/form?module=บริการทางทันตกรรม&category=ศัลยกรรมช่องปากและโรคเหงือก">
 				<i class="icon-double-angle-right"></i>
 				ศัลยกรรมช่องปากและโรคเหงือก
