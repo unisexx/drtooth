@@ -46,6 +46,7 @@
 			
 			<div class="row-fluid">
     <div class="span12">
+    	<div class="table-header">ทีมงานของเรา</div>
         <table id="table_report" class="table table-striped table-bordered table-hover">
             <thead>
                 <tr>
@@ -67,21 +68,43 @@
 					</td>
 					<td><img src="uploads/staffs/<?php echo $row->image?>" width="90"></td>
 					<td><?php echo lang_decode($row->name,'th')?></td>
-                    <td>
-                        <div class='hidden-phone visible-desktop btn-group'>
-                            <a href="staffs/admin/staffs/form/<?php echo $row->id?>" class='btn btn-mini btn-info'><i class='icon-edit'></i></a>
-                            <a class='btn btn-mini btn-danger' href="staffs/admin/staffs/delete/<?php echo $row->id?>" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')"><i class='icon-trash'></i></a>
-                        </div>
-                        <div class='hidden-desktop visible-phone'>
-                            <div class="inline position-relative">
-                                <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down icon-only"></i></button>
-                                <ul class="dropdown-menu dropdown-icon-only dropdown-yellow pull-right dropdown-caret dropdown-close">
-                                    <li><a href="staffs/admin/staffs/form/<?php echo $row->id?>" class="tooltip-success" data-rel="tooltip" title="Edit" data-placement="left"><span class="green"><i class="icon-edit"></i></span></a></li>
-                                    <li><a href="staffs/admin/staffs/delete/<?php echo $row->id?>" class="tooltip-error" data-rel="tooltip" title="Delete" data-placement="left" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')"><span class="red"><i class="icon-trash"></i></span> </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </td>
+                    <td class="td-actions">
+								<div class="hidden-phone visible-desktop action-buttons">
+									<a class="green" href="staffs/admin/staffs/form/<?php echo $row->id ?>">
+										<i class="icon-pencil bigger-130"></i>
+									</a>
+
+									<a class="red" href="staffs/admin/staffs/delete/<?php echo $row->id?>" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')">
+										<i class="icon-trash bigger-130"></i>
+									</a>
+								</div>
+
+								<div class="hidden-desktop visible-phone">
+									<div class="inline position-relative">
+										<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown">
+											<i class="icon-caret-down icon-only bigger-120"></i>
+										</button>
+
+										<ul class="dropdown-menu dropdown-icon-only dropdown-yellow pull-right dropdown-caret dropdown-close">
+											<li>
+												<a href="staffs/admin/staffs/form/<?php echo $row->id ?>" class="tooltip-success" data-rel="tooltip" title="Edit">
+													<span class="green">
+														<i class="icon-edit bigger-120"></i>
+													</span>
+												</a>
+											</li>
+
+											<li>
+												<a href="staffs/admin/staffs/delete/<?=$row->id?>" class="tooltip-error" data-rel="tooltip" title="Delete" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')">
+													<span class="red">
+														<i class="icon-trash bigger-120"></i>
+													</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</td>
                 </tr>
             <?php endforeach;?>
             </tbody>

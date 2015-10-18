@@ -42,7 +42,7 @@
 </li>
 		
 
-<li <?=@$_GET['module'] == 'เกี่ยวกับเรา'?'class="active open"':'';?>>
+<li <?=@$_GET['module'] == 'เกี่ยวกับเรา'?'class="active open"':'';?> <?=@$this->uri->segment(1) == 'tools'?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
 		<i class="fa fa-hospital-o"></i>
 		<span class="menu-text"> เกี่ยวกับเรา </span>
@@ -72,17 +72,37 @@
 			</a>
 		</li>
 		
-		<li <?=@$_GET['module'] == 'เกี่ยวกับเรา' && @$_GET['category'] == 'เครื่องมือของเรา'?'class="active open"':'';?>>
-			<a href="contents/admin/contents/form?module=เกี่ยวกับเรา&category=เครื่องมือของเรา">
+		<li <?=@$_GET['module'] == 'เกี่ยวกับเรา' && @$_GET['category'] == 'เครื่องมือของเรา'?'class="active open"':'';?> <?=@$this->uri->segment(1) == 'tools'?'class="active open"':'';?>>
+			<!-- <a href="contents/admin/contents/form?module=เกี่ยวกับเรา&category=เครื่องมือของเรา"> -->
+				<a href="#" class="dropdown-toggle">
 				<i class="icon-double-angle-right"></i>
 				เครื่องมือของเรา
+				<b class="arrow icon-angle-down"></b>
 			</a>
+			
+			<ul class="submenu">
+				<li <?=@$_GET['module'] == 'เกี่ยวกับเรา' && @$_GET['category'] == 'เครื่องมือของเรา'?'class="active open"':'';?>>
+					<a href="contents/admin/contents/form?module=เกี่ยวกับเรา&category=เครื่องมือของเรา">
+						<i class="fa fa-file-text-o"></i>
+						คำอธิบาย
+					</a>
+				</li>
+
+				<li <?=@$this->uri->segment(1) == 'tools'?'class="active"':'';?>>
+					<a href="tools/admin/tools">
+						<i class="fa fa-stethoscope"></i>
+						เครื่องมือ
+					</a>
+				</li>
+			</ul>
+			
+			
 		</li>
 	</ul>
 </li>
 
 
-<li <?=@$_GET['module'] == 'บริการทางทันตกรรม'?'class="active open"':'';?>>
+<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' || @$this->uri->segment(1) == 'services'?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
 		<i class="fa fa-medkit"></i>
 		<span class="menu-text"> บริการทางทันตกรรม </span>
@@ -91,8 +111,8 @@
 	</a>
 
 	<ul class="submenu">
-		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'บริการทั้งหมด'?'class="active open"':'';?>>
-			<a href="contents/admin/contents/form?module=บริการทางทันตกรรม&category=บริการทั้งหมด">
+		<li <?=@$this->uri->segment(1) == 'services'?'class="active open"':'';?>>
+			<a href="services/admin/services">
 				<i class="icon-double-angle-right"></i>
 				บริการทั้งหมด
 			</a>
@@ -189,6 +209,14 @@
 	<a href="contacts/admin/contacts">
 		<i class="fa fa-envelope-o"></i>
 		<span class="menu-text"> ติดต่อเรา </span>
+	</a>
+</li>
+
+
+<li <?=@$this->uri->segment(1) == 'addresses'?'class="active"':'';?>>
+	<a href="addresses/admin/addresses">
+		<i class="fa fa-map-marker"></i>
+		<span class="menu-text"> ที่อยู่ </span>
 	</a>
 </li>
 		

@@ -34,9 +34,12 @@ class Staffs extends Admin_Controller
 				}
 				$_POST['image'] = $rs->upload($_FILES['image'],'uploads/staffs/',180,220);
 			}
+			// echo print_r($_POST['name'])."<br><Br>";
 			$_POST['name'] = lang_encode($_POST['name']);
 			$_POST['detail'] = lang_encode($_POST['detail']);
 			$_POST['status'] = 'approve';
+			// echo $_POST['name'];
+			// exit;
 			$rs->from_array($_POST);
 			$rs->save();
 			set_notify('success', lang('save_data_complete'));	
