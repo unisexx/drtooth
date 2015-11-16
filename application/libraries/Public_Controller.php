@@ -6,8 +6,8 @@ class Public_Controller extends Master_Controller
 		parent::__construct();
 		
 		header('Content-type: text/html; charset=UTF-8');
-		$this->template->title('งานบริหารกองทุน สำนักงานปลัดกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์.');
-		$this->template->set_theme('fundv2');
+		$this->template->title('DrTooth Dental Clinic');
+		$this->template->set_theme('drtooth');
     	$this->template->set_layout('blank');
 		
 		// Set js
