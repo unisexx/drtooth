@@ -12,30 +12,19 @@ class Contents extends Public_Controller
 		$this->template->build('view',$data);
 	}
 	
-	function fund(){
-		$this->template->build('fund');
-	}
-	
-	function fund_more1(){
-		$this->template->build('fund_more1');
-	}
-	
-	function fund_more2(){
-		$this->template->build('fund_more2');
-	}
-	
-	function fund_more3(){
-		$this->template->build('fund_more3');
-	}
-	
-	function act(){
-		$this->template->build('act');
-	}
-	
-	function inc_home_maquee(){
+	function inc_home_reason(){
 		$data['rs'] = new Content();
-		$data['rs']->where('module = "อักษรวิ่ง" and category = "อักษรวิ่ง"')->get(1);
-		echo strip_tags($data['rs']->detail);
+		$data['rs']->where('module = "เกี่ยวกับเรา" and category = "เหตุผลที่คุณควรเลือกเรา"')->get(1);
+		$this->load->view('inc_home_reason',$data);
+	}
+	
+	function inc_home_tool(){
+		$data['rs'] = new Content();
+		$data['rs']->where('module = "เกี่ยวกับเรา" and category = "เครื่องมือของเรา"')->get(1);
+		
+		$data['tools'] = new Tool();
+		$data['tools']->where('status = "approve"')->get(4);
+		$this->load->view('inc_home_tool',$data);
 	}
 }
 ?>

@@ -8,7 +8,7 @@ class Public_Controller extends Master_Controller
 		header('Content-type: text/html; charset=UTF-8');
 		$this->template->title('DrTooth Dental Clinic');
 		$this->template->set_theme('drtooth');
-    	$this->template->set_layout('blank');
+    	$this->template->set_layout('layout');
 		
 		// Set js
 		$this->lang->load('admin');
