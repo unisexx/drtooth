@@ -29,7 +29,7 @@ class Talks extends Admin_Controller
                 if($rs->id){
                     $rs->delete_file($rs->id,'uploads/talks','image');
                 }
-                $_POST['image'] = $rs->upload($_FILES['image'],'uploads/talks/',139,96);
+                $_POST['image'] = $rs->upload($_FILES['image'],'uploads/talks/');
             }
 			// if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			$_POST['title'] = lang_encode($_POST['title']);
