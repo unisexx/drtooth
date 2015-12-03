@@ -3,7 +3,7 @@
           <div class="menu-Dentist ">
           	<ul>
           		<?foreach($categories as $item):?>
-          		<li><a href="talks/index/<?=$item->id?>"><?=lang_decode($item->name)?></a></li>
+          		<li><a href="talks/category/<?=$item->id?>"><?=lang_decode($item->name)?></a></li>
           		<?endforeach;?>
             </ul>
 		  </div>

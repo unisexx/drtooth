@@ -5,11 +5,17 @@ class Talks extends Public_Controller{
 		parent::__construct();
 	}
 	
-	function index($id=false){
+	function index(){
 		$data['rs'] = new Talk();
-		if($id!=""){ $data['rs']->where_related('categories', 'id', $id); }
 		$data['rs']->where('status = "approve"')->order_by('id','desc')->get_page();
 		$this->template->build('index',$data);
+	}
+	
+	function category($id){
+		$data['rs'] = new Talk();
+		$data['rs']->where_related('categories', 'id', $id);
+		$data['rs']->where('status = "approve"')->order_by('id','desc')->get_page();
+		$this->template->build('category',$data);
 	}
 	
 	function view($id){
