@@ -12,13 +12,13 @@ class Dentists extends Public_Controller
 		$this->load->view('inc_home',$data);
 	}
 	
-	function team(){
+	function index(){
 		$data['rs'] = new Category();
 		$data['rs']->where('module = "dentists" and parents <> 0')->get();
 		
 		$data['dentists'] = new Dentist();
 		$data['dentists']->order_by('id','asc')->get();
-		$this->template->build('team',$data);
+		$this->template->build('index',$data);
 	}
 }
 ?>

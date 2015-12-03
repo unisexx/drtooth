@@ -61,13 +61,13 @@
                     <a href="#">คุยกับหมอฟัน</a>
                     <ul>
                         <li>
-                            <a href="dentists/team">ทีมทันตแพทย์ของเรา</a>
+                            <a href="dentists">ทีมทันตแพทย์ของเรา</a>
                         </li>
                         <li>
-                            <a href="DentistTalk.html">คุยกับหมอฟัน</a>
+                            <a href="talks">คุยกับหมอฟัน</a>
                         </li>
                         <li>
-                            <a href="staff.html">ทีมงานของเรา</a>
+                            <a href="staffs">ทีมงานของเรา</a>
                         </li>
                     </ul>
                 </li>
