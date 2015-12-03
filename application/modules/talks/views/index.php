@@ -5,10 +5,10 @@
    	  
    	  <?foreach($rs as $row):?>
    	  	<div class="col-left1">
-	        <span class="title-page2"><?=lang_decode($row->title)?></span>
+	        <a href="talks/view/<?=$row->id?>"><span class="title-page2"><?=lang_decode($row->title)?></span></a>
 	        <div class="by">By <span class="text-by"><?=lang_decode($row->category->name)?></span> - <?=mysql_to_th($row->created)?></div>
 	        <div style="overflow: hidden; height:180px;"><?=strip_tags(lang_decode($row->detail),'<br>')?></div><br>
-	        <button type="button" class="btn-viewall3">&nbsp;</button>
+	        <a href="talks/view/<?=$row->id?>"><button type="button" class="btn-viewall3">&nbsp;</button></a>
 	        <div class="by" style="margin-top:40px;">&nbsp;</div>
 	    </div>
 	    <div class="col-right1">

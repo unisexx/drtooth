@@ -11,5 +11,10 @@ class Talks extends Public_Controller{
 		$data['rs']->where('status = "approve"')->order_by('id','desc')->get_page();
 		$this->template->build('index',$data);
 	}
+	
+	function view($id){
+		$data['rs'] = new Talk($id);
+		$this->template->build('view',$data);
+	}
 }
 ?>
