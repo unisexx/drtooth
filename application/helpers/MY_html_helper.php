@@ -222,4 +222,28 @@ function cleanformat($value)
     $clean = intval(str_replace(',', '', $value));
     return $clean;
 }
+
+function category_name($id){
+    $CI =& get_instance();
+    $rs = new Category($id);
+    return lang_decode($rs->name);
+}
+
+function category_name_by_talking_view($id){
+    $CI =& get_instance();
+    $rs = new Talk($id);
+    return "<li><a href='talks/category/".$rs->category->id."'>".lang_decode($rs->category->name)."</a></li><li class='active'>".lang_decode($rs->title)."</li>";
+}
+
+function dentist_name($id){
+    $CI =& get_instance();
+    $rs = new Dentist($id);
+    return "<li class='active'>".lang_decode($rs->name)."</li>";
+}
+
+function patient_name($id){
+    $CI =& get_instance();
+    $rs = new Patient($id);
+    return "<li class='active'>".lang_decode($rs->name)."</li>";
+}
 ?>

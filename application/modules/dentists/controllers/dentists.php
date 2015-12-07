@@ -20,5 +20,10 @@ class Dentists extends Public_Controller
 		$data['dentists']->order_by('id','asc')->get();
 		$this->template->build('index',$data);
 	}
+	
+	function view($id){
+		$data['rs'] = new Dentist($id);
+		$this->template->build('view',$data);
+	}
 }
 ?>

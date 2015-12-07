@@ -7,14 +7,14 @@ class Talks extends Public_Controller{
 	
 	function index(){
 		$data['rs'] = new Talk();
-		$data['rs']->where('status = "approve"')->order_by('id','desc')->get_page();
+		$data['rs']->where('status = "approve"')->order_by('id','desc')->get_page(2);
 		$this->template->build('index',$data);
 	}
 	
 	function category($id){
 		$data['rs'] = new Talk();
 		$data['rs']->where_related('categories', 'id', $id);
-		$data['rs']->where('status = "approve"')->order_by('id','desc')->get_page();
+		$data['rs']->where('status = "approve"')->order_by('id','desc')->get_page(4);
 		$this->template->build('category',$data);
 	}
 	

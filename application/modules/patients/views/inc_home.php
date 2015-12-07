@@ -1,17 +1,31 @@
 <div class="reson">คนไข้ของเรา</div>
-<div class="arrow">
-    <ul>
-        <li class="arrow-right">
-            <a href="#">&nbsp;</a>
-        </li>
-        <li class="arrow-left">
-            <a href="#">&nbsp;</a>
-        </li>
-    </ul>
+<div class="arrow" style="float:right;">
+	<a class="left" href="#carousel-patients" data-slide="prev"><img src="themes/drtooth/images/arrow-left.png"></a>
+	&nbsp;&nbsp;
+    <a class="right" href="#carousel-patients" data-slide="next"><img src="themes/drtooth/images/arrow-right.png"></a>
 </div>
 <br>
 <div class="icon-talk"></div>
-<p class="talk"><?=lang_decode($rs->detail)?>
-    <br>
-    <span style="float:right; color:#555555;"><?=lang_decode($rs->name)?></span>
-</p>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.carousel').carousel()
+});
+</script>
+
+<div id="carousel-patients" class="carousel slide" data-ride="carousel" style="margin-top:-31px;">
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+  	<?foreach($rs as $key=>$row):?>
+  	<div class="item <?if($key==0){echo'active';}?>">
+      <p class="talk"><?=lang_decode($row->detail)?>
+		    <br>
+		    <span style="float:right; color:#555555;"><?=lang_decode($row->name)?></span>
+		</p>
+		<br>
+    </div>
+  	<?endforeach;?>
+  </div>
+  
+</div>

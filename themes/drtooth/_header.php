@@ -29,13 +29,13 @@
         <div id="cssmenu">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="home" class="active">หน้าแรก</a>
+                    <a href="home" <?if($this->uri->segment(1) == "home"){echo"class='active'";}?>>หน้าแรก</a>
                 </li>
                 <li>
-                    <a href="aboutus">เกี่ยวกับเรา</a>
+                    <a href="aboutus" <?if($this->uri->segment(1) == "aboutus"){echo"class='active'";}?>>เกี่ยวกับเรา</a>
                 </li>
                 <li>
-                    <a href="#">บริการทางทันตกรรม</a>
+                    <a href="#" <?if($this->uri->segment(1) == "services"){echo"class='active'";}?>>บริการทางทันตกรรม</a>
                     <ul>
                         <li>
                             <a href="services">บริการทั้งหมด</a>
@@ -58,7 +58,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">คุยกับหมอฟัน</a>
+                    <a href="#" <?if($this->uri->segment(1) == "dentists" || $this->uri->segment(1) == "talks"){echo"class='active'";}?>>คุยกับหมอฟัน</a>
                     <ul>
                         <li>
                             <a href="dentists">ทีมทันตแพทย์ของเรา</a>
@@ -72,20 +72,20 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="testimonial.html">คนไข้ของเรา</a>
-                    <ul>
+                    <a href="patients" <?if($this->uri->segment(1) == "patients"){echo"class='active'";}?>>คนไข้ของเรา</a>
+                    <!-- <ul>
                         <li>
                             <a href="#">our cases</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li>
-                    <a href="contact.html">ติดต่อเรา</a>
-                    <ul>
+                    <a href="contacts" <?if($this->uri->segment(1) == "contacts"){echo"class='active'";}?>>ติดต่อเรา</a>
+                    <!-- <ul>
                         <li>
                             <a href="#">work with us</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
             </ul>
         </div>

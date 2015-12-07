@@ -18,7 +18,7 @@
 		                    	<?endforeach;?>
 		                    </ul>
 		                </div>
-		                <div><button type="button" class="btn-readmore">&nbsp;</button></div>
+		                <!-- <div><button type="button" class="btn-readmore">&nbsp;</button></div> -->
 		             </div>
 		         	</div>
 		        </div>

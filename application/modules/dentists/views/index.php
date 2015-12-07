@@ -4,12 +4,6 @@
         	<div class="col-md-12">
             
             <ul class="nav nav-tabs" id="tab-team">
-              <!-- <li class="active"><a data-toggle="tab" href="#home">ทันตแพทย์ทั้งหมด<i class="arrow_p"><i></i></i></a></li>
-              <li><a data-toggle="tab" href="#menu1">ทันตกรรมจัดฟัน<i class="arrow_p"><i></i></i></a></li>
-              <li><a data-toggle="tab" href="#menu2">ทันตกรรมทั่วไป<i class="arrow_p"><i></i></i></a></li>
-              <li><a data-toggle="tab" href="#menu3">ทันตกรรมประดิษฐ์<i class="arrow_p"><i></i></i></a></li>
-              <li><a data-toggle="tab" href="#menu4" style="line-height: 15px; padding-top:5px;">ทันตกรรมปริทันต์โรคเหงือก<br>และสุขภาพช่องปาก<i class="arrow_p"><i></i></i></a></li>
-              <li><a data-toggle="tab" href="#menu5" style="line-height: 15px; padding-top:5px;">ทันตกรรมรักษารากฟัน<br>และรากฟันเทียม<i class="arrow_p"><i></i></i></a></li> -->
               <li class="active"><a data-toggle="tab" href="#home">ทันตแพทย์ทั้งหมด<i class="arrow_p"><i></i></i></a></li>
               <?foreach($rs as $key=>$row):?>
               <li><a data-toggle="tab" href="#menu<?=$key+1?>" <?if($row->id==55 || $row->id==56){echo'style="line-height: 15px; padding-top:5px;"';}?>><?=lang_decode($row->name)?><i class="arrow_p"><i></i></i></a></li>
@@ -21,7 +15,7 @@
               			<?foreach($dentists as $key=>$row):?>
               			<div class="col-md-3">
                             <div class="dr-pic" style="text-align:center;">
-                                <a href="#"><img src="uploads/dentists/<?=$row->image?>" width="180" height="220" class="border-dr-pic"></a>
+                                <a href="dentists/view/<?=$row->id?>"><?=thumb('uploads/dentists/'.$row->image,'180','220','1','class="border-dr-pic"')?></a>
                             </div>
                             <span class="label"><?=lang_decode($row->name)?></span>
                             <div class="position"><?=lang_decode($row->experience)?></div>
@@ -37,8 +31,8 @@
               			<div class="row">
               				<?foreach($row->dentist->order_by('id','asc')->get() as $item):?>
                             <div class="col-md-3" style="width:257.5px;">
-	                            <div class="dr-pic" style="text-align:center;">
-	                                <a href="#"><img src="uploads/dentists/<?=$item->image?>" width="180" height="220" class="border-dr-pic"></a>
+	                           <div class="dr-pic" style="text-align:center;">
+	                                <a href="dentists/view/<?=$item->id?>"><?=thumb('uploads/dentists/'.$row->image,'180','220','1','class="border-dr-pic"')?></a>
 	                            </div>
 	                            <span class="label"><?=lang_decode($item->name)?></span>
 	                            <div class="position"><?=lang_decode($item->experience)?></div>

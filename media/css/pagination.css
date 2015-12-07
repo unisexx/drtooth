@@ -9,7 +9,7 @@ body div.pagination{
 
 body div.pagination a,div.pagination span{
        margin: 1px 2px;
-    padding:3px 6px;
+    padding:3px 10px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     color:#444444 !important;
@@ -25,9 +25,9 @@ body div.pagination a,div.pagination span{
 
 
 body div.pagination span.current,div.pagination a:hover{
-    color:#FFFFFF !important;
-    background: #de8d8d;
-    border: 1px solid #feead2;
+    color:#444444 !important;
+    background: #CCCCCC;
+    border:1px solid #CCCCCC;
 }
 
 
@@ -50,6 +50,6 @@ body div.pagination ul li.active a
 {
    
     color:#FFFFFF !important;
-    background:url(images/active_button.png) repeat-x bottom left !important;
-    border: 1px solid #feead2;
+    background:#6B4497;
+    border:1px solid #CCCCCC;
 }

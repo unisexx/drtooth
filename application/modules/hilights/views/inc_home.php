@@ -18,16 +18,16 @@
     <div>
         <ul>
             <li>
-                <a href="#" class="picmenu01">นัดหมายตรวจสุขภาพฟัน</a>
+                <a href="contacts" class="picmenu01">นัดหมายตรวจสุขภาพฟัน</a>
             </li>
             <li>
-                <a href="#" class="picmenu02">คุยกับหมอฟัน</a>
+                <a href="talks" class="picmenu02">คุยกับหมอฟัน</a>
             </li>
             <li>
-                <a href="#" class="picmenu03">ทันตกรรมเพื่อความงาม</a>
+                <a href="talks/category/49" class="picmenu03">ทันตกรรมเพื่อความงาม</a>
             </li>
             <li>
-                <a href="#" class="picmenu04">ทันตกรรมเด็ก</a>
+                <a href="talks/category/6" class="picmenu04">ทันตกรรมเด็ก</a>
             </li>
         </ul>
     </div>

@@ -141,6 +141,7 @@
 						</div>
 					</div>
 					
+					<!--
 					<div class="control-group">
 						<label class="control-label">แผนที่</label>
 						<div class="controls">
@@ -155,12 +156,6 @@
 							</style>
 							<div id="map_canvas"></div>
 								<div id="map_frm">
-							    <!-- <label for="latitude">Latitude :</label>
-							    <input name="latitude" type="text" id="lat_value" value="<?php echo $rs->latitude?>" />  <br />
-							    <label for="longitude">Longitude :</label>
-							    <input name="longitude" type="text" id="lon_value" value="<?php echo $rs->longitude?>" />  <br />
-							  	<label for="zoom">Zoom :</label>
-							  	<input name="zoom" type="text" id="zoom_value" value="<?php echo $rs->zoom?>" size="5" /> -->
 							</div>
 						</div>
 					</div>
@@ -185,6 +180,7 @@
 							<input id="zoom_value" class="input-xxlarge" type="text" name="zoom" value="<?php echo $rs->zoom?>"/>
 						</div>
 					</div>
+					-->
 					
 					<div class="form-actions">
 						<?php echo form_referer() ?>

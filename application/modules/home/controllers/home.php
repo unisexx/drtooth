@@ -15,6 +15,8 @@ class Home extends Public_Controller {
 	function sidebar(){
 		$data['categories'] = new Category();
 		$data['categories']->where('parents != 0 and module = "talks"')->order_by('id','asc')->get();
+		
+		$data['address'] = new Address(1);
 		$this->load->view('sidebar',$data);
 	}
 }
