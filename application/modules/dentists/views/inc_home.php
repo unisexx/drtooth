@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-md-12">
-    	<span class="reson">ทีมทันตแพทย์ของเรา</span>
+    	<span class="reson"><?=lang("Our_Dentists")?></span>
         <div class="line1">&nbsp;</div>
         <div class="arrow" style="float:right;">
 			<a class="left" href="#carousel-dentists" data-slide="prev"><img src="themes/drtooth/images/arrow-left.png"></a>

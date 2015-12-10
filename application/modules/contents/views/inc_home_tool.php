@@ -1,7 +1,7 @@
 <div class="col-md-6">
     <span class="reson">
         <img src="themes/drtooth/images/icon-tech.png" width="26" height="42">
-        <span style="font-size:50px;">น</span>วัตกรรมสมัยใหม่ มาตราฐานระดับสากล</span>
+        <?=lang("modern")?></span>
     <br>
     <?=lang_decode($rs->detail)?>
 </div>

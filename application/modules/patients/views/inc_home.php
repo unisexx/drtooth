@@ -1,4 +1,4 @@
-<div class="reson">คนไข้ของเรา</div>
+<div class="reson"><?=lang("TESTIMONIAL")?></div>
 <div class="arrow" style="float:right;">
 	<a class="left" href="#carousel-patients" data-slide="prev"><img src="themes/drtooth/images/arrow-left.png"></a>
 	&nbsp;&nbsp;

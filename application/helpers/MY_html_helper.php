@@ -246,4 +246,10 @@ function patient_name($id){
     $rs = new Patient($id);
     return "<li class='active'>".lang_decode($rs->name)."</li>";
 }
+
+function gallery_name($id){
+    $CI =& get_instance();
+    $rs = new Category($id);
+    return "<li class='active'>".lang_decode($rs->name)."</li>";
+}
 ?>

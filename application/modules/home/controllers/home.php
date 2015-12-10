@@ -19,5 +19,13 @@ class Home extends Public_Controller {
 		$data['address'] = new Address(1);
 		$this->load->view('sidebar',$data);
 	}
+	
+	public function lang($lang)
+	{
+		$this->load->library('user_agent');
+		$this->session->set_userdata('lang',$lang);
+		
+		redirect($this->agent->referrer());
+	}
 }
 ?>

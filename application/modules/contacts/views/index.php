@@ -12,9 +12,9 @@
     <div class="row">
       <div class="col-md-8">
         <div style="clear:both; margin-top:20px;">&nbsp;</div>
-        <p>ทีมผู้ช่วยทันตแพทย์และเจ้าหน้าที่ที่มีคุณภาพและประสิทธิภาพในการดูแลคนไข้ เอาใจใส่ต่อคนไข้ทุกคนพร้อมให้คำปรึกษาและการบริการที่พึงพอใจสูงสุดต่อผู้รับการรักษาทุกท่าน</p>
+        <p><?=lang("Make_An_Appointment_Detail")?></p>
         
-        <div class="title-page2" style="margin-top:20px; margin-bottom:20px;">ส่งข้อความถึงเรา</div>
+        <div class="title-page2" style="margin-top:20px; margin-bottom:20px;"><?=lang("Online_Appointment_Form")?></div>
         
       		<form class="form-inline" method="post" action="contacts/save">
 	              <div class="form-contact_">
@@ -34,22 +34,22 @@
       <!------------------------------------------------------END Col1--------------------------------------------------->
       <div class="col-md-4" style="float: right;">
         <div style="clear:both; margin-top:20px;">&nbsp;</div>
-        <span class="title-page2">เวลาทำการ</span>
-        <div class="open">เปิดทุกวัน
+        <span class="title-page2"><?=lang("Working_Time")?></span>
+        <div class="open"><?=lang("open2")?>
           <br>
           <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody>
               <tr>
-                <td height="27">จันทร์ - ศุกร์</td>
-                <td height="27" align="right">09.00 น. - 19.30 น.</td>
+                <td height="27"><?=lang("mon_fri")?></td>
+                <td height="27" align="right"><?=lang("open_time_1")?></td>
               </tr>
               <tr>
-                <td height="27">เสาร์</td>
-                <td height="27" align="right">09.00 น. - 19.30 น.</td>
+                <td height="27"><?=lang("Saturday")?></td>
+                <td height="27" align="right"><?=lang("open_time_1")?></td>
               </tr>
               <tr>
-                <td height="27">อาทิตย์</td>
-                <td height="27" align="right">09.00 น. - 17.00 น.</td>
+                <td height="27"><?=lang("Sunday")?></td>
+                <td height="27" align="right"><?=lang("open_time_2")?></td>
               </tr>
             </tbody>
           </table>
@@ -58,13 +58,13 @@
         <div class="contact-Dentist">
           <ul>
             <li class="icon-Dentist1">
-              <span class="text1-Dentist">อีเมล :</span>
+              <span class="text1-Dentist"><?=lang("email")?> :</span>
               <br>
               <a href="mailto:<?=$address->email?>" target="_blank"><?=$address->email?></a>
             </li>
             <li class="icon-Dentist2">
-              <span class="text1-Dentist">โทร.</span>
-              <br><?=lang_decode($address->email)?></li>
+              <span class="text1-Dentist"><?=lang("tel")?>.</span>
+              <br><?=lang_decode($address->tel)?></li>
             <li class="icon-Dentist3">
               <span class="text1-Dentist">Facebook :</span>
               <br>

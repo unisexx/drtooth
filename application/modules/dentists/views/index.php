@@ -4,7 +4,7 @@
         	<div class="col-md-12">
             
             <ul class="nav nav-tabs" id="tab-team">
-              <li class="active"><a data-toggle="tab" href="#home">ทันตแพทย์ทั้งหมด<i class="arrow_p"><i></i></i></a></li>
+              <li class="active"><a data-toggle="tab" href="#home"><?=lang("all_dentists")?><i class="arrow_p"><i></i></i></a></li>
               <?foreach($rs as $key=>$row):?>
               <li><a data-toggle="tab" href="#menu<?=$key+1?>" <?if($row->id==55 || $row->id==56){echo'style="line-height: 15px; padding-top:5px;"';}?>><?=lang_decode($row->name)?><i class="arrow_p"><i></i></i></a></li>
               <?endforeach;?>

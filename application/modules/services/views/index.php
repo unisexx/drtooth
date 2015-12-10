@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-            <span class="title-page2">บริการทั้งหมด</span>
+            <span class="title-page2"><?=lang("allservice")?></span>
          	<div style="clear:both;">&nbsp;</div>
          
 		       <?foreach($rs as $key=>$row):?>
