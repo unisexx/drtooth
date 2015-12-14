@@ -28,7 +28,7 @@ Class Hilights extends Admin_Controller{
 				if($hilight->id){
 					$hilight->delete_file($hilight->id,'uploads/hilight/','image');
 				}
-				$_POST['image'] = $hilight->upload($_FILES['image'],'uploads/hilight/',698,249);
+				$_POST['image'] = $hilight->upload($_FILES['image'],'uploads/hilight/',1050,414);
 			}
 			if(!$id)$_POST['status'] = "approve";
 			$hilight->from_array($_POST);

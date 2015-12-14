@@ -45,7 +45,7 @@
 			                <img class="img" style="width:300px;" src="<?php echo (is_file('uploads/hilight/'.$rs->image))? 'uploads/hilight/'.$rs->image : 'media/images/webboard/noavatar.gif' ?>"  /> <br><br>
 			                <?php endif;?>
 			                <div class="input-xxlarge" style="width:544px;">
-			                    <input type="file" id="id-input-file-1" name="image"/> รูปภาพขนาด 698x249 px
+			                    <input type="file" id="id-input-file-1" name="image"/> รูปภาพขนาด 1050x414 px
 			                </div>
 			            </div>
 			        </div>

@@ -20,6 +20,7 @@ $lang['search'] = "search...";
 
 //----------------- Home --------------------
 $lang['modern'] = "<span style='font-size:50px;'>M</span>odern Innovation Global Standard";
+$lang['tools'] = "Tools";
 
 //----------------- About --------------------
 $lang['modern2'] = "Modern Innovation";

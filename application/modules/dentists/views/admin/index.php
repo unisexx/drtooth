@@ -36,6 +36,7 @@
 					<thead>
 						<tr>
 							<th width="70">แสดง</th>
+							<th>รูปภาพ</th>
 							<th>ชื่อ</th>
 							<th><a class="btn btn-mini iframe" href="categories/admin/categories/dentists?iframe=true&width=90%&height=90%">หมวดหมู่</a></th>
 							<th width="105">
@@ -53,6 +54,7 @@
 									<span class="lbl"></span>
 								</label>
 							</td>
+							<th><img src="uploads/dentists/<?=$row->image?>" style="height:50px;"></th>
 							<td><?=lang_decode($row->name,'th')?></td>
 							<td><?=lang_decode($row->category->name,'th')?></td>
 							<td class="td-actions">
@@ -131,6 +133,7 @@ $(function() {
 	
 	var oTable1 = $('#sample-table-2').dataTable( {
 	"aoColumns": [
+	  null,
       { "bSortable": false },
       null,
 	  // null,

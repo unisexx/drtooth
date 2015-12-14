@@ -63,6 +63,11 @@ if($this->uri->segment(1) == "galleries" && $this->uri->segment(2) == "view" && 
 	$title_page =  lang("gallery");
 	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li><a href='galleries'>".lang("gallery")."</a></li>".gallery_name($this->uri->segment(3))."</ul>";
 }
+
+if($this->uri->segment(1) == "tools" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
+	$title_page =  lang("tools");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("tools")."</li></ul>";
+}
 ?>
 
 <div class="section" id="path-page">

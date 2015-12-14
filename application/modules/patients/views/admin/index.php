@@ -66,7 +66,7 @@
 							<span class="lbl"></span>
 						</label>
 					</td>
-					<td><img src="uploads/patients/<?php echo $row->image?>" width="90"></td>
+					<td><img src="uploads/patients/<?php echo $row->image?>" style="height:50px;"></td>
 					<td><?php echo lang_decode($row->name,'th')?></td>
                     <td class="td-actions">
 								<div class="hidden-phone visible-desktop action-buttons">

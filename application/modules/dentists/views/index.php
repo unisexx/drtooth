@@ -29,14 +29,17 @@
               <?foreach($rs as $key=>$row):?>
               <div id="menu<?=$key+1?>" class="tab-pane fade" style="position:absolute; top:0;">
               			<div class="row">
-              				<?foreach($row->dentist->order_by('id','asc')->get() as $item):?>
+              				<?foreach($row->dentist->order_by('id','asc')->get() as  $key2=>$item):?>
                             <div class="col-md-3" style="width:257.5px;">
 	                           <div class="dr-pic" style="text-align:center;">
-	                                <a href="dentists/view/<?=$item->id?>"><?=thumb('uploads/dentists/'.$row->image,'180','220','1','class="border-dr-pic"')?></a>
+	                                <a href="dentists/view/<?=$item->id?>"><?=thumb('uploads/dentists/'.$item->image,'180','220','1','class="border-dr-pic"')?></a>
 	                            </div>
 	                            <span class="label"><?=lang_decode($item->name)?></span>
 	                            <div class="position"><?=lang_decode($item->experience)?></div>
 	                        </div>
+	                        <?if(($key2+1)%4 == 0):?>
+	                        	<div style="clear:both; padding-top:40px;">&nbsp;</div>
+	                        <?endif;?>
                             <?endforeach;?>
                         </div>
               </div>
