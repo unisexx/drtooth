@@ -38,5 +38,5 @@
 	<?=modules::run('dentists/inc_home');?>
 </div>
 </div>
-<?include('_footer.php')?>
+<?=modules::run('addresses/inc_footer'); ?>
 </html>

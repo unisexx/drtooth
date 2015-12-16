@@ -1,18 +1,4 @@
-<div class="section" id="top">
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div id="top-text">
-                <span class="mail">
-                    <a href="mailto:info@drtoothdentalclinic.com" target="_blank">info@drtoothdentalclinic.com</a>
-                </span>
-                <span class="tel">+66 845401111</span>
-                <span class="time"><?=lang("open")?> &nbsp;&nbsp;<a href="home/lang/th">TH</a> | <a href="home/lang/en">EN</a></span>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+<?=modules::run('addresses/inc_header'); ?>
 
 <div class="navbar navbar-default navbar-static-top" id="bg-header">
 <div class="container">
@@ -90,6 +76,6 @@
             </ul>
         </div>
     </div>
-    <div style="margin-top:-30px;"><input type="text" class="form-search" placeholder="<?=lang("search")?>"></div>
+    <!-- <div style="margin-top:-30px;"><input type="text" class="form-search" placeholder="<?=lang("search")?>"></div> -->
 </div>
 </div>

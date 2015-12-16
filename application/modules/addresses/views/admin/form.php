@@ -134,14 +134,46 @@
 					</div>
 					
 					<div class="control-group">
-						<label class="control-label">เวลาทำการ</label>
+						<label class="control-label">twitter</label>
+						<div class="controls">
+							<input rel="th" class="input-xxlarge" type="text" name="twitter[th]" value="<?php echo lang_decode($rs->twitter,'th')?>"/>
+							<input rel="en" class="input-xxlarge" type="text" name="twitter[en]" value="<?php echo lang_decode($rs->twitter,'en')?>"/>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">google+</label>
+						<div class="controls">
+							<input rel="th" class="input-xxlarge" type="text" name="googleplus[th]" value="<?php echo lang_decode($rs->googleplus,'th')?>"/>
+							<input rel="en" class="input-xxlarge" type="text" name="googleplus[en]" value="<?php echo lang_decode($rs->googleplus,'en')?>"/>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">เวลาทำการ #1</label>
+						<div class="controls">
+							<input rel="th" class="input-xxlarge" type="text" name="open[th]" value="<?php echo lang_decode($rs->open,'th')?>"/>
+							<input rel="en" class="input-xxlarge" type="text" name="open[en]" value="<?php echo lang_decode($rs->open,'en')?>"/>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">เวลาทำการ #2</label>
+						<div class="controls">
+							<div rel="th"><textarea name="open2[th]" class="full tinymce"><?php echo lang_decode($rs->open2,'th')?></textarea></div>
+							<div rel="en"><textarea name="open2[en]" class="full tinymce"><?php echo lang_decode($rs->open2,'en')?></textarea></div>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">รายละเอียด</label>
 						<div class="controls">
 							<div rel="th"><textarea name="detail[th]" class="full tinymce"><?php echo lang_decode($rs->detail,'th')?></textarea></div>
 							<div rel="en"><textarea name="detail[en]" class="full tinymce"><?php echo lang_decode($rs->detail,'en')?></textarea></div>
 						</div>
 					</div>
 					
-					<!--
+					
 					<div class="control-group">
 						<label class="control-label">แผนที่</label>
 						<div class="controls">
@@ -180,7 +212,7 @@
 							<input id="zoom_value" class="input-xxlarge" type="text" name="zoom" value="<?php echo $rs->zoom?>"/>
 						</div>
 					</div>
-					-->
+					
 					
 					<div class="form-actions">
 						<?php echo form_referer() ?>
@@ -205,7 +237,7 @@
 <script type="text/javascript" src="media/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript" src="media/tiny_mce/config.js"></script>
 <script type="text/javascript">
-tiny('detail[th],detail[en]');
+tiny('detail[th],detail[en],open2[th],open2[en]');
 $(function() {
 	$("[rel=en]").hide();
 	$(".lang a").click(function(){

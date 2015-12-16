@@ -7,12 +7,6 @@
 <br>
 <div class="icon-talk"></div>
 
-<script type="text/javascript">
-$(document).ready(function(){
-	$('.carousel').carousel()
-});
-</script>
-
 <div id="carousel-patients" class="carousel slide" data-ride="carousel" style="margin-top:-31px;">
   
   <!-- Wrapper for slides -->

@@ -32,6 +32,10 @@ Class Addresses extends Admin_Controller{
 			$_POST['address'] = lang_encode($_POST['address']);
 			$_POST['tel'] = lang_encode($_POST['tel']);
 			$_POST['facebook'] = lang_encode($_POST['facebook']);
+			$_POST['twitter'] = lang_encode($_POST['twitter']);
+			$_POST['googleplus'] = lang_encode($_POST['googleplus']);
+			$_POST['open'] = lang_encode($_POST['open']);
+			$_POST['open2'] = lang_encode($_POST['open2']);
 			//$_POST['service_time'] = lang_encode($_POST['service_time']);
 			$_POST['detail'] = lang_encode($_POST['detail']);
 			// $_POST['user_id'] = $this->session->userdata('id');

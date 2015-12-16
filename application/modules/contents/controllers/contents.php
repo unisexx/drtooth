@@ -23,7 +23,7 @@ class Contents extends Public_Controller
 		$data['rs']->where('module = "เกี่ยวกับเรา" and category = "เครื่องมือของเรา"')->get(1);
 		
 		$data['tools'] = new Tool();
-		$data['tools']->where('status = "approve"')->get(4);
+		$data['tools']->where('status = "approve"')->get();
 		$this->load->view('inc_home_tool',$data);
 	}
 }

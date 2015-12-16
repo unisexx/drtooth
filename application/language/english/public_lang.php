@@ -42,6 +42,7 @@ $lang['open_time_1'] = "9:00 am. - 19:30 pm.";
 $lang['open_time_2'] = "9:00 am. - 17:00 pm.";
 $lang['email'] = "E-mail";
 $lang['tel'] = "Tel";
+$lang['send_mail'] = "Send mail";
 
 //----------------- Footer --------------------
 $lang['footer'] = "<p style='margin-top:30px;'><b>Dr. Tooth Dental Clinic</b> : 2/7 Soi Wacharapol, Ramintra Road Tha Raeng, Bangkhen Bangkok 10230 Tel : +66 2347 0711, +668 4540 1111 ";

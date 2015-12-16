@@ -12,6 +12,6 @@
 <?include('_header.php')?>
 <?include('_breadcrumb.php')?>
 <?php echo $template['body']; ?>
-<?include('_footer.php')?>
+<?=modules::run('addresses/inc_footer'); ?>
 	
 </html>
