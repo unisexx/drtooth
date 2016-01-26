@@ -1,0 +1,143 @@
+# Translation of Development (trunk) in Thai
+# This file is distributed under the same license as the Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2012-10-09 10:53:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Development (trunk)\n"
+
+#: tumblr-importer.php:296 tumblr-importer.php:372 tumblr-importer.php:416
+msgid "Problem communicating with Tumblr, retrying later"
+msgstr "มีปัญหาการเชื่อมต่อกับ Tumblr โปรดลองใหม่ภายหลัง"
+
+#: tumblr-importer.php:224
+msgid "This blog is currently being imported."
+msgstr "บล็อกนี้กำลังถูกนำเข้าอยู่ในขณะนี้"
+
+#: tumblr-importer.php:219
+msgid "The specified blog cannot be found."
+msgstr "ไม่พบบล็อกที่ระบุ"
+
+#: tumblr-importer.php:579
+msgid "No blog information found for this account. "
+msgstr "ไม่พบข้อมูลบล็อกสำหรับบัญชีนี้"
+
+#: tumblr-importer.php:570
+msgid "Tumblr replied with an error: "
+msgstr "Tumblr ตอบกลับว่ามีข้อผิดพลาด: "
+
+#: tumblr-importer.php:208
+msgid "Because Tumblr's servers are often overloaded, the importing process happens in the background. Thus, you will not see immediate results here. Come back to this page later to check on the importer's progress."
+msgstr "เพราะว่าเซิร์ฟเวอร์ Tumblr นั้นทำงานหนักบ่อยครั้ง  กระบวนการนำเข้าเกิดขึ้นในส่วนหลังบ้าน  คุณจะไม่เห็นผลลัพท์ที่นี่ทันที  กลับมาหน้านี้อีกครั้งแล้วตรวจสอบกระบวนการนำเข้า"
+
+#: tumblr-importer.php:185
+msgid "In Progress"
+msgstr "กำลังดำเนินการ"
+
+#: tumblr-importer.php:183
+msgid "Finished!"
+msgstr "เสร็จแล้ว"
+
+#: tumblr-importer.php:181
+msgid "Import this blog"
+msgstr "นำเข้าบล็อกนี้"
+
+#: tumblr-importer.php:161
+msgid "Action"
+msgstr "กระทำ"
+
+#: tumblr-importer.php:160
+msgid "Author Selection"
+msgstr "การเลือกผู้เขียน"
+
+#: tumblr-importer.php:159
+msgid "Pages Imported"
+msgstr "นำเข้าหน้าแล้ว"
+
+#: tumblr-importer.php:158
+msgid "Queued Imported"
+msgstr "นำเข้าคิวแล้ว"
+
+#: tumblr-importer.php:157
+msgid "Drafts Imported"
+msgstr "นำเข้าโครงเรื่องแล้ว"
+
+#: tumblr-importer.php:156
+msgid "Posts Imported"
+msgstr "นำเข้าเรื่องแล้ว"
+
+#: tumblr-importer.php:150
+msgid "Tumblr does not have such a concept as \"author\", even on multi-author blogs. Therefore you will need to select which WordPress user will be listed as the author of the imported posts."
+msgstr "Tumblr ไม่มีแนวทางการใช้สถานะ \"ผู้เขียน\" แม้ว่าจะเป็นบล็อกหลายผู้เขียน  ดังนั้นคุณต้องเลือกว่าผู้ใช้เวิร์ดเพรสใดจะถูกบันทึกเป็นผู้เขียนของเรื่องที่นำเข้า"
+
+#: tumblr-importer.php:155
+msgid "URL"
+msgstr "URL"
+
+#: tumblr-importer.php:151
+msgid "Refresh view"
+msgstr "โหลดการดูใหม่"
+
+#: tumblr-importer.php:154
+msgid "Tumblr Blog"
+msgstr "บล็อก Tumblr"
+
+#: tumblr-importer.php:131
+msgid "This doesn't appear to be a valid email address. Please check it and try again."
+msgstr "อีเมล์นี้ดูเหมือนว่าใช้งานไม่ได้  โปรดตรวจสอบและลองใหม่อีกครั้ง"
+
+#: tumblr-importer.php:117
+msgid "Connect to Tumblr"
+msgstr "เชื่อมไปยัง Tumblr"
+
+#: tumblr-importer.php:112
+msgid "Password:"
+msgstr "รหัสผ่าน:"
+
+#: tumblr-importer.php:108
+msgid "Email:"
+msgstr "อีเมล์:"
+
+#: tumblr-importer.php:103
+msgid "First, you need to do is provide your email and password for Tumblr, so that WordPress can access your account."
+msgstr "สิ่งแรก คุณต้องให้อีเมล์และรหัสผ่านที่คุณใช้สำหรับ Tumblr เพื่อที่เวิร์ดเพรสจะสามารถเข้าถึงบัญชีของคุณได้"
+
+#: tumblr-importer.php:102
+msgid "Howdy! This importer allows you to import posts from your Tumblr account into your WordPress site."
+msgstr "สวัสดี  ตัวนำเข้านี้อนุญาตคุณให้นำเข้าเรื่องจากบัญชี Tumblr ของคุณมาสู่เว็บไซต์เวิร์ดเพรส"
+
+#: tumblr-importer.php:101 tumblr-importer.php:149
+msgid "Import Tumblr"
+msgstr "นำเข้า Tumblr"
+
+#: tumblr-importer.php:86
+msgid "Clear account information"
+msgstr "ล้างค่าข้อมูลบัญชี"
+
+#: tumblr-importer.php:83
+msgid "Note: This will stop any import currently in progress."
+msgstr "หมายเหตุ: นี่จะทำการหยุดการนำเข้าใด ๆ ที่ทำอยู่ในตอนนี้"
+
+#: tumblr-importer.php:82
+msgid "We have saved some information about your Tumblr account in your WordPress database. Clearing this information will allow you to start over. Restarting will not affect any posts you have already imported. If you attempt to re-import a blog, duplicate posts will be skipped."
+msgstr "เราได้บันทึกข้อมูลบางอย่างเกี่ยวกับบัญชี Tumblr ของคุณในฐานข้อมูลเวิร์ดเพรสของคุณ  ล้างค่าข้อมูลนี้จะอนุญาตให้คุณเริ่มใหม่ได้   การเริ่มใหม่จะไม่มีผลกับเรื่องที่คุณได้นำเข้าแล้ว  ถ้าคุณพยายามนำเข้าบล็อกอีกครั้ง  เรื่องที่ซ้ำจะถูกข้ามไป"
+
+#: tumblr-importer.php:31
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: class-wp-importer-cron.php:51
+msgid "Every Minute"
+msgstr "ทุกนาที"
+
+#: tumblr-importer.php:31
+msgid "Import posts from a Tumblr blog."
+msgstr "นำเข้าเรื่องจากบล็อกTumblr"
+
+#: tumblr-importer.php:81
+msgid "Restart"
+msgstr "เริ่มใหม่"

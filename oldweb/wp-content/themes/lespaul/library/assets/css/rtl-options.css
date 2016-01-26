@@ -1,0 +1,298 @@
+/*
+*****************************************************
+* WEBMAN'S WORDPRESS THEME FRAMEWORK
+* Created by WebMan - www.webmandesign.eu
+*
+* Admin options and metaboxes for RTL languages
+*****************************************************
+*/
+
+
+
+/*********************************************/
+/* FROM:                                     */
+/* shortcodes.css                            */
+/*********************************************/
+
+	#wm-shortcode-generator {direction: rtl}
+	html #wm-shortcode-generator .shortcode-desc {
+		padding: 5px 24px 15px 0;
+		background-position: 100% 5px;
+	}
+	html #wm-shortcode-generator .credits {text-align: left}
+
+	/* hack to target WebKit browsers only */
+	@media screen and ( -webkit-min-device-pixel-ratio: 0 ) {
+		html .wm-select-wrap select {background-position: 2% 50%}
+	}
+
+	html #wm-shortcode-form input[type="text"] {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	html #wm-shortcode-form .image-before {margin: 0 0 0 10px}
+
+
+
+/*********************************************/
+/* FROM:                                     */
+/* wm-options-panel.css                      */
+/*********************************************/
+
+	.wm-wrap {
+		padding: 0 220px 0 0;
+		background-position: 100% 0;
+		border-left: 0;
+		border-right: 1px solid #DDD;
+		direction: rtl;
+	}
+		.wm-wrap.meta {}
+
+	/* navigation */
+		.wm-wrap #nav {
+			float: right;
+			margin-left: 0;
+			margin-right: -220px;
+		}
+			.wm-wrap #nav li span {
+				left: auto;
+				right: 30px;
+			}
+
+	/* general classes */
+		.wm-wrap .left {
+			float: right;
+			margin: 0 0 0 20px;
+		}
+		.wm-wrap .left {
+			float: left;
+			margin: 0 20px 0 0;
+		}
+		.wm-wrap p.desc {
+			padding: 0 0 5px 40px;
+			margin: -20px 2px 0 0 !important;
+		}
+
+	/* return messages */
+		#message.wm-message,
+		.modal-box {
+			right: auto;
+			left: 10px;
+		}
+			#message.wm-message p {
+				padding: 0 56px 0 0;
+				background-position: 100% 0;
+			}
+		.modal-box {left: 50%}
+
+	/* info boxes */
+		.wm-wrap .info,
+		.wm-wrap .warning,
+		.wm-wrap .help {
+			padding: 24px 72px 20px 20px;
+			background-position: 98% 20px;
+		}
+
+	/* sub tabs */
+		.wm-wrap ul.tabs.sub {
+			left: auto;
+			right: 0;
+		}
+			.wm-wrap ul.tabs.sub li,
+			.wm-wrap.meta ul.tabs li,
+			.wm-wrap ul.inside-tabs li {
+				float: right;
+				margin-right: 0;
+				margin-left: 10px;
+			}
+
+	/* buttons */
+		.wm-wrap .btn-add,
+		.wm-wrap .btn-remove,
+		.wm-wrap .btn-default,
+		.wm-wrap .btn-preview {float: right}
+			.wm-wrap .add-items .btn-add {margin: -5px 0 10px 10px}
+
+		.wm-wrap .btn-default {float: left}
+
+	/* sorting */
+		.wm-wrap .sort-handle {
+			margin: 5px 1px 0 0;
+			-webkit-border-bottom-right-radius: 0;
+			   -webkit-border-top-right-radius: 0;
+			    -moz-border-radius-bottomright: 0;
+			       -moz-border-radius-topright: 0;
+			        border-bottom-right-radius: 0;
+			           border-top-right-radius: 0;
+			-webkit-border-bottom-left-radius: 5px;
+			   -webkit-border-top-left-radius: 5px;
+			    -moz-border-radius-bottomleft: 5px;
+			       -moz-border-radius-topleft: 5px;
+			        border-bottom-left-radius: 5px;
+			           border-top-left-radius: 5px;
+		}
+
+	/* image uploader */
+		.wm-wrap .image-container em {
+			left: auto;
+			right: 0;
+			padding: 0 0 5px 10px;
+		}
+
+	/* dropcaps */
+		.dropcap {
+			float: right;
+			margin: 4px 0 0 8px;
+		}
+
+	/* text, file, textarea, readonly */
+		.wm-wrap .slide-number-wrapper input[type='text'] {margin: 5px 10px 5px 0}
+			.wm-wrap .slide-number-wrapper.no-js input[type='text'] {margin-right: 0}
+
+	/* select */
+		.wm-wrap .select-wrapper i {
+			float: right;
+			margin-right: 0;
+			margin-left: 10px;
+		}
+
+	/* CSS3 checkboxes */
+		:root .wm-wrap input[type='checkbox'] + label:before {
+			margin-left: 10px;
+			margin-right: 0;
+		}
+		:root .checkbox + .desc {
+			padding-left: 0;
+			padding-right: 50px;
+		}
+
+	/* add-item styles */
+		.wm-wrap .rows input,
+		.wm-wrap .rows .select-wrapper {float: right}
+
+	/* reset form */
+		.wm-wrap .reset-form {
+			right: auto;
+			left: 260px;
+		}
+			.wm-wrap .reset-form input[type='submit'] {float: left}
+
+	/* headings */
+		.wm-wrap .toggle-heading {
+			padding-left: 0;
+			padding-right: 50px;
+			background-position: 100% .7em;
+		}
+			.wm-wrap .first.toggle-heading {background-position: 100% 0}
+
+		.wm-wrap h2 .btn {
+			right: auto;
+			left: 0;
+		}
+
+		.wm-wrap h3.intro {padding: 30px 152px 30px 40px}
+			.wm-wrap h3.intro img {
+				left: auto;
+				right: 40px;
+			}
+
+		.wm-wrap h4.toggle-heading {background-position: 100% 0}
+
+	/* footer */
+		.wm-wrap #wrap-footer {
+			padding: 30px 250px 30px 30px;
+			margin: 0 -220px 0 0;
+			text-align: left;
+		}
+			.wm-wrap #wrap-footer p {
+				left: auto;
+				right: 0;
+			}
+
+	/* content */
+		.wm-wrap ul.bullets {
+			margin-left: 0;
+			margin-right: 20px;
+		}
+
+		/* columns */
+			.wm-wrap .column {
+				float: right;
+				padding-left: 4%;
+				padding-right: 0;
+			}
+
+		/* layout and pattern boxes */
+			.wm-wrap .toggle-patterns .main-label {
+				padding-left: 0;
+				padding-right: 20px;
+				background-position: 100% 50%;
+			}
+			.wm-wrap .layout-box,
+			.wm-wrap .pattern-box {float: right}
+				.wm-wrap .layout-box .ie-bug {
+					left: auto;
+					right: 0;
+				}
+					.wm-wrap .pattern-preview span {
+						left: auto;
+						right: 0;
+						padding: 0 0 4px 6px;
+					}
+					.wm-wrap div[data-option*="icon"] label a {
+						left: auto;
+						right: 0;
+					}
+
+	/*********************************************/
+	/* jQuery UI Slider                          */
+	/*********************************************/
+		.wm-wrap p.slide-number-wrapper {background-position: 100% 15px}
+		.wm-wrap .ui-slider {
+			float: right;
+			text-align: right;
+		}
+		.wm-wrap .ui-slider .ui-slider-range-min {
+			left: auto;
+			right: 0;
+		}
+		.wm-wrap .ui-slider .ui-slider-range-max {
+			right: auto;
+			left: 0;
+		}
+
+
+
+	/*********************************************/
+	/* responsive styles                         */
+	/*********************************************/
+
+		@media only screen and (max-width: 1240px) {
+
+			.wm-wrap .column {padding-left: 0}
+
+		} /* /max 1240px */
+
+		@media only screen and (max-width: 900px) {
+
+			.wm-wrap {
+				padding: 0 40px 0 0;
+				background-image: url(../img/bg-nav-responsive.png);
+			}
+
+			.wm-wrap a.logo {text-align: right}
+
+			.wm-wrap #nav {
+				margin-left: 0;
+				margin-right: -40px;
+			}
+				.wm-wrap #nav li span {
+					left: auto;
+					right: 8px;
+				}
+
+		} /* /max 900px */
+
+
+
+/* END OF FILE */

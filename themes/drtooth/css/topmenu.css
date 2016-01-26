@@ -62,7 +62,7 @@ top .25s ease;  -ms-transition: opacity .3s ease, top .25s ease;  -o-transition:
   -ms-transform: rotateY(180deg);  -moz-transform: rotateY(180deg);  -o-transform: rotateY(180deg);  transform: rotateY(180deg);}
 
 @media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
-  #cssmenu {    width: auto;  }
+  /*#cssmenu {    width: auto;  }
   #cssmenu.align-center ul {    text-align: left;  }
   #cssmenu.align-right > ul > li {    float: none;  }
   #cssmenu ul {    width: auto;  }
@@ -100,5 +100,4 @@ top .25s ease;  -ms-transition: opacity .3s ease, top .25s ease;  -o-transition:
   #cssmenu #menu-button:before {    display: block;    content: '';    position: absolute;    height: 3px;    width: 22px;    border-top: 2px solid #7a8189;
     right: 20px;    top: 25px;  }
   #cssmenu ul.open #menu-button:after,
-  #cssmenu ul.open #menu-button:before {    border-color: #fff;  }
-
+  #cssmenu ul.open #menu-button:before {    border-color: #fff;  }*/

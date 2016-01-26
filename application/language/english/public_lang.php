@@ -25,6 +25,8 @@ $lang['tools'] = "Tools";
 //----------------- About --------------------
 $lang['modern2'] = "Modern Innovation";
 $lang['modern2_detail'] = "Dr.Tooth have tools and technologies which are international standardization in treatment. A cleaning system Sterile by use of modern innovation. The patient confidence in treatment.";
+$lang['view_all'] = '<button type="button" class="btn-viewall-eng">&nbsp;</button>';
+$lang['more'] = "read more";
 
 //----------------- Service --------------------
 $lang['category'] = "Category";

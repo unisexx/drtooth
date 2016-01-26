@@ -26,7 +26,7 @@
         <div class="col-md-4">
           <a href="themes/drtooth/images/about/about-pic006.jpg"><img src="themes/drtooth/images/about/about-pic06.jpg" width="98" height="98" class="img-gall"></a>
         </div>
-        <a href="services"><button type="button" class="btn-viewall">&nbsp;</button></a>
+        <a href="services"><?=lang("view_all")?></a>
     </div>
     
     <div class="title2-page"><?=lang_decode($reason->title)?></div>
@@ -42,7 +42,7 @@
 	    <img src="themes/drtooth/images/about/icon-talk-right.png" width="11" height="10" style="margin-top:-15px;margin-left:5px;">
 	  </p>
   <div style="clear:both;">&nbsp;</div>
-  <a href="patients"><button type="button" class="btn-viewall2">&nbsp;</button></a>
+  <a href="patients"><?=lang("view_all")?></a>
 </div>
 
 <div class="col-md-7" style="float: right;">

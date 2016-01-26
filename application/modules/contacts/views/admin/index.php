@@ -59,7 +59,7 @@
 							<th>ข้อความ</th>
 							<!-- <th><a class="btn btn-mini iframe" href="categories/admin/categories/downloads?iframe=true&width=90%&height=90%">หมวดหมู่</a></th> -->
 							<th width="90">
-								<a class="btn btn-mini btn-info" href="hilights/admin/hilights/form">เพิ่มรายการ</a>
+								<!-- <a class="btn btn-mini btn-info" href="hilights/admin/hilights/form">เพิ่มรายการ</a> -->
 							</th>
 						</tr>
 					</thead>

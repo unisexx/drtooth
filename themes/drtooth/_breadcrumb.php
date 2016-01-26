@@ -15,7 +15,7 @@ if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "" && $this->u
 }
 
 if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "category" && is_numeric($this->uri->segment(3))){
-	$title_page = lang("Talk_to_Dentists");
+	$title_page = category_name($this->uri->segment(3));
 	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li><a href='talks'>".lang("Talk_to_Dentists")."</a></li><li class='active'>".category_name($this->uri->segment(3))."</li></ul>";
 }
 

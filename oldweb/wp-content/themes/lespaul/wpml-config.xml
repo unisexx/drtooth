@@ -1,0 +1,31 @@
+<wpml-config>
+	<admin-texts>
+		<key name="wm-lespaul">
+			<key name="wm-general-search-placeholder" />
+
+			<key name="wm-branding-admin-footer" />
+			<key name="wm-branding-dash-quickaccess-title" />
+			<key name="wm-branding-dash-quickaccess-text" />
+
+			<key name="wm-cp-permalink-module" />
+			<key name="wm-cp-permalink-faq" />
+			<key name="wm-cp-permalink-logos" />
+			<key name="wm-cp-permalink-price" />
+			<key name="wm-cp-permalink-project" />
+			<key name="wm-cp-permalink-project-category" />
+			<key name="wm-cp-permalink-project-tag" />
+			<key name="wm-cp-permalink-project-type" />
+			<key name="wm-cp-permalink-staff" />
+			<key name="wm-cp-permalink-staff-department" />
+
+			<key name="wm-header-right" />
+
+			<key name="wm-contents-related-projects-title" />
+
+			<key name="wm-footer-credits" />
+
+			<key name="wm-p404-title" />
+			<key name="wm-p404-text" />
+		</key>
+	</admin-texts>
+</wpml-config>

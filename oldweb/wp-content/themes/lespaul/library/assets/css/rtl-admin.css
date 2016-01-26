@@ -1,0 +1,72 @@
+/*
+*****************************************************
+* WEBMAN'S WORDPRESS THEME FRAMEWORK
+* Created by WebMan - www.webmandesign.eu
+*
+* Admin CSS styles for RTL languages
+*****************************************************
+*/
+
+
+
+/*********************************************/
+/* FROM:                                     */
+/* admin-addon.css                           */
+/*********************************************/
+
+	.wp-pointer.wmfeature01 .wp-pointer-arrow {
+		right: auto;
+		left: 60px;
+	}
+
+	/* dashboard widget text */
+		#wm-quick-access .text ul {
+			margin-left: 0;
+			margin-right: 2em;
+		}
+
+	/* dashboard widget links */
+		#wm-quick-access .links a {float: right}
+
+	/* widgets */
+		div[id*="wm-"] .widget-top h4:before {margin: 2px 0 2px 5px}
+
+	/* update notifier */
+		.update-notifier #instructions {
+			float: right;
+			margin-right: 0;
+			margin-left: 40px;
+		}
+		.update-notifier .theme-img {
+			float: right;
+			margin: 10px 0 20px 20px;
+		}
+		.update-notifier #changelog {float: right}
+
+	/* contextual help */
+		#contextual-help-link-wrap #contextual-help-link {background-position: left 8px}
+			#contextual-help-link-wrap #contextual-help-link.screen-meta-active {background-position: left -28px}
+		.contextual-help-tab {padding: 9px 56px 9px 9px}
+		.contextual-help-tab-title {
+			padding: 14px 46px 14px 9px;
+			margin: 0 -46px 0 0;
+			background-position: 90% 50%;
+		}
+		h3.small-toggle-title {
+			padding: 20px 24px 0 0;
+			background-position: 100% 20px;
+		}
+
+		table.attributes th {text-align: right}
+		.sticky-content.active {
+			right: auto;
+			left: -270px;
+		}
+			.sticky-content.active h4 {
+				left: auto;
+				right: 15px;
+			}
+
+
+
+/* END OF FILE */

@@ -10,7 +10,7 @@
                     <div class="caption">
                         <h4><?=lang_decode($row->title)?></h4>
                         <div style="overflow: hidden; height:180px;"><?=strip_tags(lang_decode($row->detail),'<br>')?></div><br>
-                       <a href="talks/view/<?=$row->id?>" class="btn btn-primary" id="btn-more">อ่านต่อ</a>
+                       <a href="talks/view/<?=$row->id?>" class="btn btn-primary" id="btn-more"><?=lang('more')?></a>
                     </div>
                 </div>
             </div>

@@ -109,6 +109,7 @@
 .img-gall{border:1px solid #c5c3c3; margin-top:20px;}
 .img-gall:hover {border:1px solid white;}
 .btn-viewall {float:right; margin-top:15px; margin-right:7px; display:block; width:86px; height:33px; background-image: url(../images/btn-viewall.jpg); background-repeat:no-repeat; border:0;}
+.btn-viewall-eng {float:right; margin-top:15px; margin-right:7px; display:block; width:86px; height:33px; background-image: url(../images/btn-viewall-eng.jpg); background-repeat:no-repeat; border:0;}
 .btn-viewall:hover {display:block; width:86px; height:33px; background-image: url(../images/btn-viewall-hot.jpg); background-repeat:no-repeat; border:0;}
 
 .person{float:left;}
