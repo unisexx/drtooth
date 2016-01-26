@@ -1,4 +1,4 @@
-<div class="reson">คนไข้ของเรา</div>
+<div class="reson"><?=lang("TESTIMONIAL")?></div>
 <div class="arrow" style="float:right;">
 	<a class="left" href="#carousel-patients" data-slide="prev"><img src="themes/drtooth/images/arrow-left.png"></a>
 	&nbsp;&nbsp;
@@ -6,12 +6,6 @@
 </div>
 <br>
 <div class="icon-talk"></div>
-
-<script type="text/javascript">
-$(document).ready(function(){
-	$('.carousel').carousel()
-});
-</script>
 
 <div id="carousel-patients" class="carousel slide" data-ride="carousel" style="margin-top:-31px;">
   

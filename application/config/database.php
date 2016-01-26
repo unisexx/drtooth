@@ -38,7 +38,7 @@
 | the active record class
 */
 
-$active_group = 'local';
+$active_group = 'host';
 $active_record = TRUE;
 
 
@@ -58,55 +58,21 @@ $db['local']['swap_pre'] = '';
 $db['local']['autoinit'] = TRUE;
 $db['local']['stricton'] = FALSE;
 
-$db['fd']['hostname'] = 'mysql1.favouritehosting.com';
-$db['fd']['username'] = 'c1fundv2';
-$db['fd']['password'] = 'Y9KWyzq8mi';
-$db['fd']['database'] = 'c1fundv2';
-$db['fd']['dbdriver'] = 'mysql';
-$db['fd']['dbprefix'] = '';
-$db['fd']['pconnect'] = TRUE;
-$db['fd']['db_debug'] = TRUE;
-$db['fd']['cache_on'] = FALSE;
-$db['fd']['cachedir'] = '';
-$db['fd']['char_set'] = 'utf8';
-$db['fd']['dbcollat'] = 'utf8_general_ci';
-$db['fd']['swap_pre'] = '';
-$db['fd']['autoinit'] = TRUE;
-$db['fd']['stricton'] = FALSE;
-
-
-$db['mso']['hostname'] = 'localhost';
-$db['mso']['username'] = 'root';
-$db['mso']['password'] = 'S^69XY<Kzp';
-$db['mso']['database'] = 'fund01';
-$db['mso']['dbdriver'] = 'mysql';
-$db['mso']['dbprefix'] = '';
-$db['mso']['pconnect'] = TRUE;
-$db['mso']['db_debug'] = TRUE;
-$db['mso']['cache_on'] = FALSE;
-$db['mso']['cachedir'] = '';
-$db['mso']['char_set'] = 'utf8';
-$db['mso']['dbcollat'] = 'utf8_general_ci';
-$db['mso']['swap_pre'] = '';
-$db['mso']['autoinit'] = TRUE;
-$db['mso']['stricton'] = FALSE;
-
-
-$db['adodb']['hostname'] = '10.20.50.12';
-$db['adodb']['username'] = 'boffice';
-$db['adodb']['password'] = 'bo2557';
-$db['adodb']['database'] = 'BOFFICE';
-$db['adodb']['dbdriver'] = 'oci8po';
-$db['adodb']['dbprefix'] = '';
-$db['adodb']['pconnect'] = TRUE;
-$db['adodb']['db_debug'] = TRUE;
-$db['adodb']['cache_on'] = FALSE;
-$db['adodb']['cachedir'] = '';
-$db['adodb']['char_set'] = 'utf8';
-$db['adodb']['dbcollat'] = 'utf8_unicode_ci';
-$db['adodb']['swap_pre'] = '';
-$db['adodb']['autoinit'] = TRUE;
-$db['adodb']['stricton'] = FALSE;
+$db['host']['hostname'] = 'localhost';
+$db['host']['username'] = 'tastydsign_drt';
+$db['host']['password'] = 'db@drt%321';
+$db['host']['database'] = 'tastydsign_drt';
+$db['host']['dbdriver'] = 'mysql';
+$db['host']['dbprefix'] = '';
+$db['host']['pconnect'] = TRUE;
+$db['host']['db_debug'] = TRUE;
+$db['host']['cache_on'] = FALSE;
+$db['host']['cachedir'] = '';
+$db['host']['char_set'] = 'utf8';
+$db['host']['dbcollat'] = 'utf8_general_ci';
+$db['host']['swap_pre'] = '';
+$db['host']['autoinit'] = TRUE;
+$db['host']['stricton'] = FALSE;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

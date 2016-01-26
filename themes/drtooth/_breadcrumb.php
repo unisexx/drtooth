@@ -1,57 +1,72 @@
 <?php
 if($this->uri->segment(1) == "aboutus"){
-	$title_page = "เกี่ยวกับเรา";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li class='active'>เกี่ยวกับเรา</li></ul>";
+	$title_page = lang("about");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("about")."</li></ul>";
 }
 
 if($this->uri->segment(1) == "services"){
-	$title_page = "บริการทางทันตกรรม";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li class='active'>บริการทางทันตกรรม</li></ul>";
+	$title_page = lang("service");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("service")."</li></ul>";
 }
 
 if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "" && $this->uri->segment(3) == ""){
-	$title_page = "คุยกับหมอฟัน";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li class='active'>คุยกับหมอฟัน</li></ul>";
+	$title_page = lang("Talk_to_Dentists");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("Talk_to_Dentists")."</li></ul>";
 }
 
 if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "category" && is_numeric($this->uri->segment(3))){
-	$title_page = "คุยกับหมอฟัน";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li><a href='talks'>คุยกับหมอฟัน</a></li><li class='active'>".category_name($this->uri->segment(3))."</li></ul>";
+	$title_page = lang("Talk_to_Dentists");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li><a href='talks'>".lang("Talk_to_Dentists")."</a></li><li class='active'>".category_name($this->uri->segment(3))."</li></ul>";
 }
 
 if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
-	$title_page = "คุยกับหมอฟัน";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li><a href='talks'>คุยกับหมอฟัน</a></li>".category_name_by_talking_view($this->uri->segment(3))."</ul>";
+	$title_page = lang("Talk_to_Dentists");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li><a href='talks'>".lang("Talk_to_Dentists")."</a></li>".category_name_by_talking_view($this->uri->segment(3))."</ul>";
 }
 
 if($this->uri->segment(1) == "dentists" && $this->uri->segment(2) == "" && $this->uri->segment(3) == ""){
-	$title_page = "ทีมทันตแพทย์ของเรา";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li class='active'>ทีมทันตแพทย์ของเรา</li></ul>";
+	$title_page = lang("Our_Dentists");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("Our_Dentists")."</li></ul>";
 }
 
 if($this->uri->segment(1) == "dentists" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
-	$title_page = "ทีมทันตแพทย์ของเรา";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li><a href='dentists'>ทีมทันตแพทย์ของเรา</a></li>".dentist_name($this->uri->segment(3))."</ul>";
+	$title_page = lang("Our_Dentists");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li><a href='dentists'>".lang("Our_Dentists")."</a></li>".dentist_name($this->uri->segment(3))."</ul>";
 }
 
 if($this->uri->segment(1) == "staffs"){
-	$title_page = "ทีมงานของเรา";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li class='active'>ทีมงานของเรา</li></ul>";
+	$title_page = lang("Our_Staffs");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("Our_Staffs")."</li></ul>";
 }
 
 if($this->uri->segment(1) == "patients" && $this->uri->segment(2) == "" && $this->uri->segment(3) == ""){
-	$title_page = "คนไข้ของเรา";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li class='active'>คนไข้ของเรา</li></ul>";
+	$title_page = lang("TESTIMONIAL");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("TESTIMONIAL")."</li></ul>";
 }
 
 if($this->uri->segment(1) == "patients" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
-	$title_page = "คนไข้ของเรา";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li><a href='patients'>คนไข้ของเรา</a></li>".patient_name($this->uri->segment(3))."</ul>";
+	$title_page = lang("TESTIMONIAL");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li><a href='patients'>".lang("TESTIMONIAL")."</a></li>".patient_name($this->uri->segment(3))."</ul>";
 }
 
 if($this->uri->segment(1) == "contacts"){
-	$title_page = "ติดต่อเรา";
-	$breadcrumb = "<li><a href='home'>หน้าแรก</a></li><li class='active'>ติดต่อเรา</li></ul>";
+	$title_page = lang("CONTACT_US");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("CONTACT_US")."</li></ul>";
+}
+
+if($this->uri->segment(1) == "galleries" && $this->uri->segment(2) == "" && $this->uri->segment(3) == ""){
+	$title_page = lang("gallery");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("gallery")."</li></ul>";
+}
+
+if($this->uri->segment(1) == "galleries" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
+	$title_page =  lang("gallery");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li><a href='galleries'>".lang("gallery")."</a></li>".gallery_name($this->uri->segment(3))."</ul>";
+}
+
+if($this->uri->segment(1) == "tools" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
+	$title_page =  lang("tools");
+	$breadcrumb = "<li><a href='home'>".lang("home")."</a></li><li class='active'>".lang("tools")."</li></ul>";
 }
 ?>
 

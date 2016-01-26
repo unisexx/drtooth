@@ -1,41 +1,62 @@
 <?php
-//----------------- Flag --------------------
-$lang['flag_th'] = "class='active'";
+//----------------- Header Menu --------------------
+$lang['home'] = "หน้าแรก";
+$lang['about'] = "เกี่ยวกับเรา";
+$lang['service'] = "บริการทางทันตกรรม";
+$lang['allservice'] = "บริการทั้งหมด";
+$lang['Aesthetic_Dentistry'] = "ทันตกรรมทั่วไป";
+$lang['Dental_Diagnosis'] = "ทันตกรรมจัดฟัน";
+$lang['Orthodontic_Dentistry'] = "ทันตกรรมเพื่อความงาม";
+$lang['Oral_and_Maxillofacial_Surgery'] = "ทันตกรรมประดิษฐ์และรากเทียม";
+$lang['Prosthodontic_Dentistry'] = "ศัลยกรรมช่องปากและโรคเหงือก";
+$lang['MEET_THE_DENTISTS'] = "คุยกับหมอฟัน";
+$lang['Our_Dentists'] = "ทีมทันตแพทย์ของเรา";
+$lang['Talk_to_Dentists'] = "คุยกับหมอฟัน";
+$lang['Our_Staffs'] = "ทีมงานของเรา";
+$lang['TESTIMONIAL'] = "คนไข้ของเรา";
+$lang['CONTACT_US'] = "ติดต่อเรา";
+$lang['open'] = "เปิดทุกวัน จันทร์- อาทิตย์, 8.00 - 20.00";
+$lang['search'] = "ค้นหา...";
 
-//----------------- Top Banner --------------------
-$lang['banner_agent'] = "themes/colly/images/hilight_agent_1.jpg";
-$lang['banner_gallery'] = "themes/colly/images/hilight_gallery_2.jpg";
-$lang['banner_review'] = "themes/colly/images/hilight_review_1.jpg";
+//----------------- Home --------------------
+$lang['modern'] = "<span style='font-size:50px;'>น</span>วัตกรรมสมัยใหม่ มาตราฐานระดับสากล";
+$lang['tools'] = "เครื่องมือของเรา";
 
-//----------------- Header --------------------
-$lang['head_tel'] = "themes/colly/images/tel.png";
+//----------------- About --------------------
+$lang['modern2'] = "นวัตกรรมสมัยใหม่";
+$lang['modern2_detail'] = "Dr.Tooth ได้นำเครื่องมือ เครื่องใช้ และเทคโนโลยีสมัยใหม่ซึ่งได้รับมาตราฐานระดับสากลในการรักษา มีระบบทำความสะอาด ที่ปราศจากเชื้อโรคโดยใช้นวัตกรรมสมัยใหม่ เพื่อให้คนไข้เชื่อมั่นในการเข้ารับการรักษา";
 
-//----------------- Topmenu --------------------
-$lang['topmenu02'] = "topmenu02";
-$lang['topmenu03'] = "topmenu03";
-$lang['topmenu04'] = "topmenu04";
-$lang['topmenu05'] = "topmenu05";
-$lang['topmenu06'] = "topmenu06";
-$lang['topmenu07'] = "topmenu07";
-
-//----------------- Title --------------------
-$lang['title_product'] = "themes/colly/images/title_product.png";
-$lang['title_new'] = "themes/colly/images/title_newsupdate.png";
-$lang['title_agent'] = "themes/colly/images/title_agent.png";
-$lang['title_gallery'] = "themes/colly/images/title_gallery.png";
-$lang['title_review'] = "themes/colly/images/title_review.png";
+//----------------- Service --------------------
+$lang['category'] = "หมวดหมู่";
+$lang['Make_An_Appointment'] = "นัดหมายตรวจสุขภาพฟัน";
+$lang['Make_An_Appointment_Detail'] = "ทีมผู้ช่วยทันตแพทย์และเจ้าหน้าที่ที่มีคุณภาพและประสิทธิภาพในการดูแลคนไข้ เอาใจใส่ต่อคนไข้ทุกคน พร้อมให้คำปรึกษาและการบริการที่พึงพอใจสูงสุดต่อผู้รับการรักษาทุกท่าน";
 
 //----------------- Contact --------------------
-$lang['contact_title'] = "หัวข้อ";
-$lang['contact_detail'] = "รายละเอียด";
-$lang['contact_email'] = "อีเมล์";
-$lang['contact_captcha'] = "รหัสลับ";
-
-//----------------- Breadcrumb --------------------
-$lang['home'] = "หน้าแรก";
-$lang['product'] = "ผลิตภัณฑ์";
-$lang['news'] = "ข่าวสาร";
+$lang['Online_Appointment_Form'] = "ส่งข้อความถึงเรา";
+$lang['Working_Time'] = "เวลาทำการ";
+$lang['open2'] = "เปิดทุกวัน";
+$lang['mon_fri'] = "จันทร์ - ศุกร์";
+$lang['Saturday'] = "เสาร์";
+$lang['Sunday'] = "อาทิตย์";
+$lang['open_time_1'] = "09.00 น. - 19.30 น.";
+$lang['open_time_2'] = "09.00 น. - 17.00 น.";
+$lang['email'] = "อีเมล์";
+$lang['tel'] = "โทร";
+$lang['send_mail'] = "ส่งข้อความ";
 
 //----------------- Footer --------------------
-$lang['footer'] = "themes/colly/images/name_company2.png";
+$lang['footer'] = "<p style='margin-top:30px;'><b>ด๊อกเตอร์ทูธ คลินิกทันตกรรม</b> : 12/7 ซอยวัชรพล ถนนรามอินทรา แขวงท่าแร้ง เขตบางเขน กทม. 10230 โทร. 02-347-0711, 084-540-1111";
+
+//----------------- Patient --------------------
+$lang['impress'] = "ความประทับใจในการรักษาและการบริการของคลินิก";
+
+//----------------- Our Dentists --------------------
+$lang['all_dentists'] = "ทันตแพทย์ทั้งหมด";
+
+//----------------- Our Staffs --------------------
+$lang['our_staffs'] = "เจ้าหน้าที่และผู้ช่วยทันตแพทย์";
+$lang['staff_position'] = "ผู้ช่วยทันตแพทย์";
+
+//----------------- Gallery --------------------
+$lang['gallery'] = "ภาพกิจกรรม";
 ?>

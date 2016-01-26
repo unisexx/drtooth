@@ -8,7 +8,7 @@ class Dentists extends Public_Controller
 	
 	function inc_home(){
 		$data['rs'] = new Dentist();
-		$data['rs']->where('status = "approve"')->get();
+		$data['rs']->where('status = "approve"')->order_by('id','desc')->get();
 		$this->load->view('inc_home',$data);
 	}
 	
@@ -17,7 +17,7 @@ class Dentists extends Public_Controller
 		$data['rs']->where('module = "dentists" and parents <> 0')->get();
 		
 		$data['dentists'] = new Dentist();
-		$data['dentists']->order_by('id','asc')->get();
+		$data['dentists']->order_by('id','desc')->get();
 		$this->template->build('index',$data);
 	}
 	

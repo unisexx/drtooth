@@ -2,7 +2,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            	<div class="title3-Dentist">ความประทับใจในการรักษาและการบริการของคลินิก</div>
+            	<div class="title3-Dentist"><?=lang("impress")?></div>
             	
             	<div class="row">
             		<?foreach($rs as $row):?>

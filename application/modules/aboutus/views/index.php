@@ -48,17 +48,16 @@
 <div class="col-md-7" style="float: right;">
       <div id="img-about">
           <ul>
-            <li><a href="#"><img src="themes/drtooth/images/about/about-pic07.jpg" width="290"></a></li>
-            <li><a href="#"><img src="themes/drtooth/images/about/about-pic08.jpg" width="290" style="margin-left:-4px;"></a></li>
-            <li><a href="#"><img src="themes/drtooth/images/about/about-pic09.jpg" width="290"></a></li>
-            <li><a href="#"><img src="themes/drtooth/images/about/about-pic10.jpg" width="290" style="margin-left:-4px;"></a></li>
+            <li><a href="galleries/view/48"><img src="themes/drtooth/images/about/about-pic07.jpg" width="290"></a></li>
+            <li><img src="themes/drtooth/images/about/about-pic08.jpg" width="290" style="margin-left:-4px;"></li>
+            <li><img src="themes/drtooth/images/about/about-pic09.jpg" width="290"></li>
+            <li><a href="galleries/view/71"><img src="themes/drtooth/images/about/about-pic10.jpg" width="290" style="margin-left:-4px;"></a></li>
           </ul>
       </div>
       
       <div class="techno" >
-          <div class="title2-page" style="margin-bottom:20px;margin-top:40px;">นวัตกรรมสมัยใหม่</div>
-          <p>Dr.Tooth ได้นำเครื่องมือ เครื่องใช้ และเทคโนโลยีสมัยใหม่ซึ่งได้รับมาตราฐานระดับสากลในการรักษา มีระบบทำความสะอาด ที่ปราศจากเชื้อโรคโดยใช้นวัตกรรมสมัยใหม่ เพื่อให้คนไข้เชื่อมั่นในการเข้ารับ
-การรักษา</p>
+          <div class="title2-page" style="margin-bottom:20px;margin-top:40px;"><?=lang("modern2")?></div>
+          <p><?=lang("modern2_detail")?></p>
 			
             <ul class="nav nav-tabs" id="tabTech">
             	<?foreach($tools as $key=>$row):?>

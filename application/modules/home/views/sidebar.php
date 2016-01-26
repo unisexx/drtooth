@@ -1,5 +1,5 @@
 <div class="col-md-4" style="float: right;">
-          <div class="title2-Dentist">หมวดหมู่</div>
+          <div class="title2-Dentist"><?=lang("category")?></div>
           <div class="menu-Dentist ">
           	<ul>
           		<?foreach($categories as $item):?>
@@ -8,12 +8,12 @@
             </ul>
 		  </div>
           <div style="clear:both; margin-top:20px;">&nbsp;</div>
-         <span class="title-page2">นัดหมายตรวจสุขภาพฟัน</span>
-         <p class="team-talk">ทีมผู้ช่วยทันตแพทย์และเจ้าหน้าที่ที่มีคุณภาพและประสิทธิภาพในการดูแลคนไข้ เอาใจใส่ต่อคนไข้ทุกคน พร้อมให้คำปรึกษาและการบริการที่พึงพอใจสูงสุดต่อผู้รับการรักษาทุกท่าน</p>
+         <span class="title-page2"><?=lang("Make_An_Appointment");?></span>
+         <p class="team-talk"><?=lang("Make_An_Appointment_Detail")?></p>
          	<div class="contact-Dentist">
             <ul>
-                 <li class="icon-Dentist1"><span class="text1-Dentist">อีเมล :</span><br><a href="mailto:<?=$address->email?>" target="_blank"><?=$address->email?></a></li>
-                 <li class="icon-Dentist2"><span class="text1-Dentist">โทร.</span><br><?=lang_decode($address->tel)?></li>
+                 <li class="icon-Dentist1"><span class="text1-Dentist"><?=lang("email")?> :</span><br><a href="mailto:<?=$address->email?>" target="_blank"><?=$address->email?></a></li>
+                 <li class="icon-Dentist2"><span class="text1-Dentist"><?=lang("tel")?>.</span><br><?=lang_decode($address->tel)?></li>
                  <li class="icon-Dentist3"><span class="text1-Dentist">Facebook :</span><br><a href="<?=lang_decode($address->facebook)?>">Dr.toothdentalclinicWatcharapol</a></li>
           	</ul>
             </div>

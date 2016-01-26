@@ -1,18 +1,4 @@
-<div class="section" id="top">
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div id="top-text">
-                <span class="mail">
-                    <a href="mailto:info@drtoothdentalclinic.com" target="_blank">info@drtoothdentalclinic.com</a>
-                </span>
-                <span class="tel">+66 845401111</span>
-                <span class="time">เปิดทุกวัน จันทร์- อาทิตย์, 8.00 - 20.00</span>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+<?=modules::run('addresses/inc_header'); ?>
 
 <div class="navbar navbar-default navbar-static-top" id="bg-header">
 <div class="container">
@@ -29,50 +15,50 @@
         <div id="cssmenu">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="home" <?if($this->uri->segment(1) == "home"){echo"class='active'";}?>>หน้าแรก</a>
+                    <a href="home" <?if($this->uri->segment(1) == "home"){echo"class='active'";}?>><?=lang("home")?></a>
                 </li>
                 <li>
-                    <a href="aboutus" <?if($this->uri->segment(1) == "aboutus"){echo"class='active'";}?>>เกี่ยวกับเรา</a>
+                    <a href="aboutus" <?if($this->uri->segment(1) == "aboutus"){echo"class='active'";}?>><?=lang("about")?></a>
                 </li>
                 <li>
-                    <a href="#" <?if($this->uri->segment(1) == "services"){echo"class='active'";}?>>บริการทางทันตกรรม</a>
+                    <a href="#" <?if($this->uri->segment(1) == "services"){echo"class='active'";}?>><?=lang("service")?></a>
                     <ul>
                         <li>
-                            <a href="services">บริการทั้งหมด</a>
+                            <a href="services"><?=lang("allservice")?></a>
                         </li>
                         <li>
-                            <a href="talks/category/4">ทันตกรรมทั่วไป</a>
+                            <a href="talks/category/4"><?=lang("Aesthetic_Dentistry")?></a>
                         </li>
                         <li>
-                            <a href="talks/category/3">ทันตกรรมจัดฟัน</a>
+                            <a href="talks/category/3"><?=lang("Dental_Diagnosis")?></a>
                         </li>
                         <li>
-                            <a href="talks/category/49">ทันตกรรมเพื่อความงาม</a>
+                            <a href="talks/category/49"><?=lang("Orthodontic_Dentistry");?></a>
                         </li>
                         <li>
-                            <a href="talks/category/5">ทันตกรรมประดิษฐ์และรากเทียม</a>
+                            <a href="talks/category/5"><?=lang("Oral_and_Maxillofacial_Surgery")?></a>
                         </li>
                         <li>
-                            <a href="talks/category/50">ศัลยกรรมช่องปากและโรคเหงือก</a>
+                            <a href="talks/category/50"><?=lang("Prosthodontic_Dentistry")?></a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" <?if($this->uri->segment(1) == "dentists" || $this->uri->segment(1) == "talks"){echo"class='active'";}?>>คุยกับหมอฟัน</a>
+                    <a href="#" <?if($this->uri->segment(1) == "dentists" || $this->uri->segment(1) == "talks"){echo"class='active'";}?>><?=lang("MEET_THE_DENTISTS")?></a>
                     <ul>
                         <li>
-                            <a href="dentists">ทีมทันตแพทย์ของเรา</a>
+                            <a href="dentists"><?=lang("Our_Dentists")?></a>
                         </li>
                         <li>
-                            <a href="talks">คุยกับหมอฟัน</a>
+                            <a href="talks"><?=lang("Talk_to_Dentists")?></a>
                         </li>
                         <li>
-                            <a href="staffs">ทีมงานของเรา</a>
+                            <a href="staffs"><?=lang("Our_Staffs")?></a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="patients" <?if($this->uri->segment(1) == "patients"){echo"class='active'";}?>>คนไข้ของเรา</a>
+                    <a href="patients" <?if($this->uri->segment(1) == "patients"){echo"class='active'";}?>><?=lang("TESTIMONIAL")?></a>
                     <!-- <ul>
                         <li>
                             <a href="#">our cases</a>
@@ -80,7 +66,7 @@
                     </ul> -->
                 </li>
                 <li>
-                    <a href="contacts" <?if($this->uri->segment(1) == "contacts"){echo"class='active'";}?>>ติดต่อเรา</a>
+                    <a href="contacts" <?if($this->uri->segment(1) == "contacts"){echo"class='active'";}?>><?=lang("CONTACT_US")?></a>
                     <!-- <ul>
                         <li>
                             <a href="#">work with us</a>
@@ -90,6 +76,6 @@
             </ul>
         </div>
     </div>
-    <div style="margin-top:-30px;"><input type="text" class="form-search" placeholder="ค้นหา..."></div>
+    <!-- <div style="margin-top:-30px;"><input type="text" class="form-search" placeholder="<?=lang("search")?>"></div> -->
 </div>
 </div>

@@ -2,7 +2,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            	<div class="title3-Dentist">เจ้าหน้าที่และผู้ช่วยทันตแพทย์</div>
+            	<div class="title3-Dentist"><?=lang("our_staffs")?></div>
             	
             	<div class="row">
             		<?foreach($rs as $row):?>
@@ -11,7 +11,7 @@
                             <?=thumb('uploads/staffs/'.$row->image,'180','220','1','class="border-dr-pic"')?>
                         </div>
                         <span class="label"><?=lang_decode($row->name)?></span>
-                        <div class="position">ผู้ช่วยทันตแพทย์</div>
+                        <div class="position"><?=lang("staff_position")?></div>
                      </div>
             		<?endforeach;?>
           			 
