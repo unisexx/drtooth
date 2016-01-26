@@ -44,7 +44,7 @@ $active_record = TRUE;
 
 $db['local']['hostname'] = 'localhost';
 $db['local']['username'] = 'root';
-$db['local']['password'] = '';
+$db['local']['password'] = '1234';
 $db['local']['database'] = 'drtooth';
 $db['local']['dbdriver'] = 'mysql';
 $db['local']['dbprefix'] = '';
