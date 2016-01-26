@@ -59,4 +59,10 @@ $lang['staff_position'] = "Dental Assistant";
 
 //----------------- Gallery --------------------
 $lang['gallery'] = "Gallery";
+
+//----------------- Highlight --------------------
+$lang['make_appointment'] = "Make Appointment";
+$lang['talk_with_dentists'] = "Talk with Dentists";
+$lang['orthodontic_dentistry'] = "Orthodontic Dentistry";
+$lang['aesthetic_dentistry'] = "Aesthetic Dentistry";
 ?>

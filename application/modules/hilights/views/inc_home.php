@@ -18,16 +18,16 @@
     <div>
         <ul>
             <li>
-                <a href="contacts" class="picmenu01">นัดหมายตรวจสุขภาพฟัน</a>
+                <a href="contacts" class="picmenu01"><?=lang("make_appointment")?></a>
             </li>
             <li>
-                <a href="talks" class="picmenu02">คุยกับหมอฟัน</a>
+                <a href="talks" class="picmenu02"><?=lang("talk_with_dentists")?></a>
             </li>
             <li>
-                <a href="talks/category/49" class="picmenu03">ทันตกรรมเพื่อความงาม</a>
+                <a href="talks/category/49" class="picmenu03"><?=lang("orthodontic_dentistry")?></a>
             </li>
             <li>
-                <a href="talks/category/6" class="picmenu04">ทันตกรรมเด็ก</a>
+                <a href="talks/category/6" class="picmenu04"><?=lang("aesthetic_dentistry")?></a>
             </li>
         </ul>
     </div>
