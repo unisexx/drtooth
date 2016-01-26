@@ -61,4 +61,10 @@ $lang['staff_position'] = "ผู้ช่วยทันตแพทย์";
 
 //----------------- Gallery --------------------
 $lang['gallery'] = "ภาพกิจกรรม";
+
+//----------------- Highlight --------------------
+$lang['make_appointment'] = "นัดหมายตรวจสุขภาพฟัน";
+$lang['talk_with_dentists'] = "คุยกับหมอฟัน";
+$lang['orthodontic_dentistry'] = "ทันตกรรมเพื่อความงาม";
+$lang['aesthetic_dentistry'] = "ทันตกรรมเด็ก";
 ?>
