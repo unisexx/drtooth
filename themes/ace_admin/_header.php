@@ -1,7 +1,7 @@
 <div class="navbar">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			<a href="#" class="brand">
+			<a href="#" class="brand" target="_blank">
 				<small>
 					<i class="icon-leaf"></i>
 					DrTooth Dental Clinic
