@@ -83,6 +83,14 @@
 					</div> -->
 					
 					<div class="control-group">
+						<label class="control-label">เลือกไฟล์วิดีโอ</label>
+						<div class="controls">
+							<input class="input-xxlarge" type="text" name="media" value="<?php echo $rs->media?>"/>
+							<input class="btn btn-mini btn-info" type="button" name="browse" value="เลือกไฟล์" onclick="browser($(this).prev(),'media')" />
+						</div>
+					</div> 
+					
+					<div class="control-group">
 						<label class="control-label">หมวดหมู่</label>
 						<div class="controls">
 							<?php echo form_dropdown('category_id',$rs->category->get_option(),$rs->category_id,'');?>
