@@ -6,7 +6,7 @@ class Admin_Controller extends Master_Controller
 	{
 		parent::__construct();
 		
-		ini_set("memory_limit","512M");	
+		ini_set('memory_limit', '-1');
 		
 		// check login
 		// if(!is_login('Administrator')) redirect('users/admin/auth/login');
@@ -26,7 +26,7 @@ class Admin_Controller extends Master_Controller
 		$this->template->append_metadata(js_notify());
 		
 		// simple dom
-		include('media/simpledom/simple_html_dom.php');
+		// include('media/simpledom/simple_html_dom.php');
 	}
 	
 }
