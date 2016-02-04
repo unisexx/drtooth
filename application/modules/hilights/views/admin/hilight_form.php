@@ -39,13 +39,25 @@
 				<form class="form-horizontal" method="post" action="hilights/admin/hilights/save/<?php echo $rs->id ?>" enctype="multipart/form-data">
 					
 					<div class="control-group">
-			            <label class="control-label" for="id-input-file-1">ภาพไฮไลท์</label>
+			            <label class="control-label" for="id-input-file-1">ภาพไฮไลท์ (TH)</label>
 			            <div class="controls">
-			                <?php if($rs->image):?>
-			                <img class="img" style="width:300px;" src="<?php echo (is_file('uploads/hilight/'.$rs->image))? 'uploads/hilight/'.$rs->image : 'media/images/webboard/noavatar.gif' ?>"  /> <br><br>
+			                <?php if($rs->image_th):?>
+			                <img class="img" style="width:300px;" src="<?php echo (is_file('uploads/hilight/'.$rs->image_th))? 'uploads/hilight/'.$rs->image_th : '' ?>"  /> <br><br>
 			                <?php endif;?>
 			                <div class="input-xxlarge" style="width:544px;">
-			                    <input type="file" id="id-input-file-1" name="image"/> รูปภาพขนาด 1050x414 px
+			                    <input type="file" id="id-input-file-1" name="image_th"/> รูปภาพขนาด 1050x414 px
+			                </div>
+			            </div>
+			        </div>
+			        
+			        <div class="control-group">
+			            <label class="control-label" for="id-input-file-1">ภาพไฮไลท์ (EN)</label>
+			            <div class="controls">
+			                <?php if($rs->image_en):?>
+			                <img class="img" style="width:300px;" src="<?php echo (is_file('uploads/hilight/'.$rs->image_en))? 'uploads/hilight/'.$rs->image_en : '' ?>"  /> <br><br>
+			                <?php endif;?>
+			                <div class="input-xxlarge" style="width:544px;">
+			                    <input type="file" id="id-input-file-1" name="image_en"/> รูปภาพขนาด 1050x414 px
 			                </div>
 			            </div>
 			        </div>
