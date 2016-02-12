@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-sm-10">
             <?=lang("footer")?> <br>
-            <span style="font-size:12px;">Copyright ©2015  Dr. Tooth Dental Clinic</span></p>
+            <span style="font-size:12px;">Copyright ©2015  Dr. Tooth Dental Clinic | crate by Ideeserv</span></p>
         </div>
         <div class="col-sm-2">
          	<p class="text-info text-right"> <br></p><div class="row"> 

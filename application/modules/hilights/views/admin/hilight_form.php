@@ -38,7 +38,7 @@
 			<!--PAGE CONTENT BEGINS-->
 				<form class="form-horizontal" method="post" action="hilights/admin/hilights/save/<?php echo $rs->id ?>" enctype="multipart/form-data">
 					
-					<div class="control-group">
+					<!-- <div class="control-group">
 			            <label class="control-label" for="id-input-file-1">ภาพไฮไลท์ (TH)</label>
 			            <div class="controls">
 			                <?php if($rs->image_th):?>
@@ -60,7 +60,29 @@
 			                    <input type="file" id="id-input-file-1" name="image_en"/> รูปภาพขนาด 1050x414 px
 			                </div>
 			            </div>
-			        </div>
+			        </div> -->
+			        
+			        <div class="control-group">
+						<label class="control-label">ไฟล์แนบ</label>
+						<div class="controls">
+							<?php if($rs->image_th):?>
+			                <img class="img" style="width:300px;" src="<?php echo (is_file($rs->image_th))? $rs->image_th : '' ?>"  /> <br><br>
+			                <?php endif;?>
+							<input class="input-xxlarge" type="text" name="image_th" value="<?php echo $rs->image_th?>"/>
+							<input class="btn btn-mini btn-info" type="button" name="browse" value="เลือกไฟล์" onclick="browser($(this).prev(),'image')" />
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">ไฟล์แนบ</label>
+						<div class="controls">
+							<?php if($rs->image_en):?>
+			                <img class="img" style="width:300px;" src="<?php echo (is_file($rs->image_en))? $rs->image_en : '' ?>"  /> <br><br>
+			                <?php endif;?>
+							<input class="input-xxlarge" type="text" name="image_en" value="<?php echo $rs->image_en?>"/>
+							<input class="btn btn-mini btn-info" type="button" name="browse" value="เลือกไฟล์" onclick="browser($(this).prev(),'image')" />
+						</div>
+					</div>
 			        
 			        <div class="control-group">
 						<label class="control-label">ลิ้งค์ไปยัง</label>
@@ -82,14 +104,6 @@
 			                <textarea class="input-xxlarge" rows="5" id="form-field-9" name="detail"><?php echo $rs->detail?></textarea>
 			            </div>
 			        </div> -->
-					
-					<!-- <div class="control-group">
-						<label class="control-label">ไฟล์แนบ</label>
-						<div class="controls">
-							<input class="input-xxlarge" type="text" name="files" value="<?php echo $rs->files?>"/>
-							<input class="btn btn-mini btn-info" type="button" name="browse" value="เลือกไฟล์" onclick="browser($(this).prev(),'file')" />
-						</div>
-					</div> -->
 					
 					<!-- <div class="control-group">
 						<label class="control-label">หมวดหมู่</label>

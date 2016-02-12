@@ -72,7 +72,7 @@
 									<span class="lbl"></span>
 								</label>
 							</td>
-							<td><img src="uploads/hilight/<?=$row->image_th?>" width="300"></td>
+							<td><img src="<?=$row->image_th?>" width="300"></td>
 							<td><?=$row->url?></td>
 							<!-- <td><?=$row->category->name?></td> -->
 							<td class="td-actions">

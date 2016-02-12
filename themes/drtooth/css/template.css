@@ -12,7 +12,7 @@
 
 .line-hilight{margin:0 auto;  height:1px;  margin-bottom:22px; border-top:1px solid #9669b0;}
 #highlight{ margin:0 auto;  height:433px; background-image: url(../images/bg-highlight.png); background-repeat:no-repeat; }
-	.img-highlight{width:1030px; height:406px; margin-top:4px;}
+	.img-highlight{width:1030px; height:406px; margin-top:-1px;}
 
 	.picmenu {	margin: 0;	padding: 0 0 19px;}
 	.picmenu div {margin: 0 auto;	padding: 10px 20px 38px;	position: relative;	width: 95%;	margin-top:-23px;	}
@@ -91,7 +91,7 @@
 	.label{display:block; width:216px; height:42px; background-image: url(../images/label2.png); background-repeat:no-repeat; text-align:center; font-size:15px; font-weight:bold; color:white; line-height:40px; }
 	.position { text-align:center; font-size:14px; font-weight:normal; color:#333; margin-left:-25px; margin-top: 5px;}
 
-#bg-footer{background-image: url(../images/bg-footer.jpg); background-repeat:no-repeat; background-position:center; height:78px;width:100%;margin:0 auto; }
+#bg-footer{background-image: url(../images/bg-footer.jpg); background-repeat:no-repeat; background-position:center; height:95px;width:100%;margin:0 auto; }
 #bg-header-page{background-color:none !important;}
 #bg-header{background-color:white;}
 

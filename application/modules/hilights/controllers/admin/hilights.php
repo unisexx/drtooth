@@ -23,20 +23,20 @@ Class Hilights extends Admin_Controller{
 	function save($id=FALSE){
 		if($_POST){
 			$hilight = new Hilight($id);
-			if($_FILES['image_th']['name'])
-			{
-				if($hilight->id){
-					$hilight->delete_file($hilight->id,'uploads/hilight/','image_th');
-				}
-				$_POST['image_th'] = $hilight->upload($_FILES['image_th'],'uploads/hilight/',1050,414);
-			}
-			if($_FILES['image_en']['name'])
-			{
-				if($hilight->id){
-					$hilight->delete_file($hilight->id,'uploads/hilight/','image_en');
-				}
-				$_POST['image_en'] = $hilight->upload($_FILES['image_en'],'uploads/hilight/',1050,414);
-			}
+			// if($_FILES['image_th']['name'])
+			// {
+				// if($hilight->id){
+					// $hilight->delete_file($hilight->id,'uploads/hilight/','image_th');
+				// }
+				// $_POST['image_th'] = $hilight->upload($_FILES['image_th'],'uploads/hilight/',1050,414);
+			// }
+			// if($_FILES['image_en']['name'])
+			// {
+				// if($hilight->id){
+					// $hilight->delete_file($hilight->id,'uploads/hilight/','image_en');
+				// }
+				// $_POST['image_en'] = $hilight->upload($_FILES['image_en'],'uploads/hilight/',1050,414);
+			// }
 			if(!$id)$_POST['status'] = "approve";
 			$hilight->from_array($_POST);
 			$hilight->save();

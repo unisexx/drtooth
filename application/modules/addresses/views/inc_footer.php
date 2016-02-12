@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-sm-10">
             <p style='margin-top:30px;'><b><?=lang_decode($rs->name)?></b> : <?=lang_decode($rs->address)?> <?=lang("tel")?>. <?=lang_decode($rs->tel)?> <br>
-            <span style="font-size:12px;">Copyright ©2015  Dr. Tooth Dental Clinic</span></p>
+            <span style="font-size:12px;">Copyright ©2015  Dr. Tooth Dental Clinic <br>Create By Ideeserv</span></p>
         </div>
         <div class="col-sm-2">
          	<p class="text-info text-right"> <br></p><div class="row"> 
