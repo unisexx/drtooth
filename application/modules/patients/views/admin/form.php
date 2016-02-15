@@ -105,7 +105,8 @@
 <script type="text/javascript" src="media/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript" src="media/tiny_mce/config.js"></script>
 <script type="text/javascript">
-// tiny('detail');
+tiny('detail[th],detail[en]');
+
 $(function() {
 	$("[rel=en]").hide();
 	$(".lang a").click(function(){
