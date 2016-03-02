@@ -97,6 +97,24 @@
 						</div>
 					</div>
 					
+					<hr>
+					
+					<div class="control-group">
+						<label class="control-label">meta keyword</label>
+						<div class="controls">
+							<input  rel="th" id="name" class="span5" type="text" name="meta_keyword[th]" value="<?php echo lang_decode($rs->meta_keyword,'th')?>">
+					        <input  rel="en" id="name" class="span5" type="text" name="meta_keyword[en]" value="<?php echo lang_decode($rs->meta_keyword,'en')?>">
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">meta description</label>
+						<div class="controls">
+							<input  rel="th" id="name" class="span5" type="text" name="meta_description[th]" value="<?php echo lang_decode($rs->meta_description,'th')?>">
+					        <input  rel="en" id="name" class="span5" type="text" name="meta_description[en]" value="<?php echo lang_decode($rs->meta_description,'en')?>">
+						</div>
+					</div>
+					
 					<div class="form-actions">
 						<?php echo form_referer() ?>
 						<button class="btn btn-large btn-info" type="submit">
