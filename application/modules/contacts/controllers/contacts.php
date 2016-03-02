@@ -8,6 +8,7 @@ class Contacts extends Public_Controller
 	
 	function index(){
 		$data['address'] = new Address(1);
+		$this->template->title('ติดต่อเรา - DrTooth Dental Clinic');
 		$this->template->build('index',$data);
 	}
 	
