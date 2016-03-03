@@ -8,6 +8,7 @@ class Home extends Public_Controller {
 	
 	function index()
 	{
+		$this->template->title('หน้าแรก - DrTooth Dental Clinic');
 		$this->template->set_layout('home');
 		$this->template->build('index');
 	}

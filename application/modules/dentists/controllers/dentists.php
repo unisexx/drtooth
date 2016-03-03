@@ -18,11 +18,15 @@ class Dentists extends Public_Controller
 		
 		$data['dentists'] = new Dentist();
 		$data['dentists']->order_by('id','desc')->get();
+		
+		$this->template->title('ทีมทันตแพทย์ของเรา - DrTooth Dental Clinic');
 		$this->template->build('index',$data);
 	}
 	
 	function view($id){
 		$data['rs'] = new Dentist($id);
+		$this->template->title(lang_decode($data['rs']->name).' - DrTooth Dental Clinic');
+		$this->template->append_metadata( meta('description',lang_decode($data['rs']->name).strip_tags(lang_decode($data['rs']->detail))));
 		$this->template->build('view',$data);
 	}
 }

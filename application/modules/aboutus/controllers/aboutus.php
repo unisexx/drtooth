@@ -21,6 +21,8 @@ class Aboutus extends Public_Controller{
 		$data['tools'] = new Tool();
 		$data['tools']->where('status = "approve"')->get(4);
 		
+		$this->template->title('เกี่ยวกับเรา - DrTooth Dental Clinic');
+		
 		$this->template->build('index',@$data);
 	}
 }
