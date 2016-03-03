@@ -99,7 +99,7 @@
 					
 					<hr>
 					
-					<div class="control-group">
+					<!-- <div class="control-group">
 						<label class="control-label">meta keyword</label>
 						<div class="controls">
 							<input  rel="th" id="name" class="span5" type="text" name="meta_keyword[th]" value="<?php echo lang_decode($rs->meta_keyword,'th')?>">
@@ -113,7 +113,7 @@
 							<input  rel="th" id="name" class="span5" type="text" name="meta_description[th]" value="<?php echo lang_decode($rs->meta_description,'th')?>">
 					        <input  rel="en" id="name" class="span5" type="text" name="meta_description[en]" value="<?php echo lang_decode($rs->meta_description,'en')?>">
 						</div>
-					</div>
+					</div> -->
 					
 					<div class="form-actions">
 						<?php echo form_referer() ?>

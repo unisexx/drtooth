@@ -23,8 +23,8 @@ class Talks extends Public_Controller{
 	function view($id){
 		$data['rs'] = new Talk($id);
 		$this->template->title(lang_decode($data['rs']->title).' - DrTooth Dental Clinic');
-        $this->template->append_metadata( meta('description',lang_decode($data['rs']->meta_description)));
-		$this->template->append_metadata( meta('keywords',lang_decode($data['rs']->meta_keyword)));
+        // $this->template->append_metadata( meta('description',lang_decode($data['rs']->meta_description)));
+		// $this->template->append_metadata( meta('keywords',lang_decode($data['rs']->meta_keyword)));
 		$this->template->build('view',$data);
 	}
 }
