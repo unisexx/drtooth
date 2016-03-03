@@ -15,8 +15,8 @@ class Public_Controller extends Master_Controller
 		$this->template->append_metadata(js_notify());
 		
 		// meta keywords
-		$this->template->append_metadata( meta('description','คลินิกทันตกรรมที่ให้บริการการดูแลรักษาฟันและโรคในช่องปากโดยทีมทันตแพทย์ที่เชี่ยวชาญเฉพาะทาง มีประสบการณ์ในการทำงาน'));
-		$this->template->append_metadata( meta('keywords','DrTooth,Dental,Clinic,ทันตกรรม,จัดฟัน,Damon,Invisalign,จัดฟันร่วมกับการผ่าตัด,ความงาม,ทันตกรรมประดิษฐ์,รากเทียม,ศัลยกรรม,ช่องปาก,โรคเหงือก,ขูดหินปูน,เคลือบผิวฟัน,เคลือบฟลูออไรด์,ฟอกสีฟัน,X-Ray,ถอนฟัน,ผ่าฟันคุด,ครอบฟัน,อุดฟัน'));
+		// $this->template->append_metadata( meta('description','คลินิกทันตกรรมที่ให้บริการการดูแลรักษาฟันและโรคในช่องปากโดยทีมทันตแพทย์ที่เชี่ยวชาญเฉพาะทาง มีประสบการณ์ในการทำงาน'));
+		// $this->template->append_metadata( meta('keywords','DrTooth,Dental,Clinic,ทันตกรรม,จัดฟัน,Damon,Invisalign,จัดฟันร่วมกับการผ่าตัด,ความงาม,ทันตกรรมประดิษฐ์,รากเทียม,ศัลยกรรม,ช่องปาก,โรคเหงือก,ขูดหินปูน,เคลือบผิวฟัน,เคลือบฟลูออไรด์,ฟอกสีฟัน,X-Ray,ถอนฟัน,ผ่าฟันคุด,ครอบฟัน,อุดฟัน'));
         
         // Set Language
         if(!$this->session->userdata('lang')) $this->session->set_userdata('lang','th');

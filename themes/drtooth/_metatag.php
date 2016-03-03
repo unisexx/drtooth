@@ -1,4 +1,10 @@
 <?php
+// หน้าแรก
+if($this->uri->segment(1) == "home" || $this->uri->segment(1) == ""){
+	$description = "คลินิกทันตกรรมที่ให้บริการการดูแลรักษาฟันและโรคในช่องปากโดยทีมทันตแพทย์ที่เชี่ยวชาญเฉพาะทาง มีประสบการณ์ในการทำงาน";
+	$keywords = "DrTooth,Dental,Clinic,ทันตกรรม,จัดฟัน,Damon,Invisalign,จัดฟันร่วมกับการผ่าตัด,ความงาม,ทันตกรรมประดิษฐ์,รากเทียม,ศัลยกรรม,ช่องปาก,โรคเหงือก,ขูดหินปูน,เคลือบผิวฟัน,เคลือบฟลูออไรด์,ฟอกสีฟัน,X-Ray,ถอนฟัน,ผ่าฟันคุด,ครอบฟัน,อุดฟัน";
+}
+
 // เกี่ยวกับเรา
 if($this->uri->segment(1) == "aboutus"){
 	$description = "";
@@ -85,5 +91,5 @@ if($this->uri->segment(1) == "tools" && $this->uri->segment(2) == "view" && is_n
 ?>
 
 
-<meta name="description" content="<?=$description?>"> 
-<meta name="keywords" content="<?=$keywords?>">
+<meta name="description" content="<?=@$description?>"> 
+<meta name="keywords" content="<?=@$keywords?>">
