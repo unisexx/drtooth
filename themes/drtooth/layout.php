@@ -3,7 +3,7 @@
 <head>
 <base href="<?php echo base_url(); ?>" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo $template['title']; ?></title> 
+<!-- <title><?php echo $template['title']; ?></title>  -->
 <?include('_metatag.php')?>
 <?include('_inc.php')?>
 <?php echo $template['metadata']; ?>
