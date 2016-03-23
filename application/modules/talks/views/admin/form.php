@@ -91,6 +91,14 @@
 					</div> 
 					
 					<div class="control-group">
+						<label class="control-label">image_alt</label>
+						<div class="controls">
+							<input  rel="th" id="name" class="span5" type="text" name="alt[th]" value="<?php echo lang_decode($rs->alt,'th')?>">
+					        <input  rel="en" id="name" class="span5" type="text" name="alt[en]" value="<?php echo lang_decode($rs->alt,'en')?>">
+						</div>
+					</div>
+					
+					<div class="control-group">
 						<label class="control-label">หมวดหมู่</label>
 						<div class="controls">
 							<?php echo form_dropdown('category_id',$rs->category->get_option(),$rs->category_id,'');?>

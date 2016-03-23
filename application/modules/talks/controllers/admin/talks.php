@@ -34,6 +34,7 @@ class Talks extends Admin_Controller
 			// if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			$_POST['title'] = lang_encode($_POST['title']);
 			$_POST['detail'] = lang_encode($_POST['detail']);
+			$_POST['alt'] = lang_encode($_POST['alt']);
 			// $_POST['meta_keyword'] = lang_encode($_POST['meta_keyword']);
 			// $_POST['meta_description'] = lang_encode($_POST['meta_description']);
 			if(!$id)$_POST['status'] = "approve";

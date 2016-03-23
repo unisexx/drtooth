@@ -12,7 +12,7 @@
 	        <div class="by" style="margin-top:40px;">&nbsp;</div>
 	    </div>
 	    <div class="col-right1">
-	   	 <img src="uploads/talks/<?=$row->image?>" width="280" height="280" class="picDentistTalk" style="margin-top:10px;">
+	   	 <img src="uploads/talks/<?=$row->image?>" alt="<?=lang_decode($row->alt)?>" width="280" height="280" class="picDentistTalk" style="margin-top:10px;">
 	    </div>
 	    
 	    <div style="clear:both;">&nbsp;</div>
