@@ -28,5 +28,9 @@ class Home extends Public_Controller {
 		
 		redirect($this->agent->referrer());
 	}
+	
+	function info(){
+		// phpinfo();
+	}
 }
 ?>
