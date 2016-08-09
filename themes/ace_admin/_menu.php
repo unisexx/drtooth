@@ -118,7 +118,7 @@
 			</a>
 		</li>
 
-		<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ทันตกรรมทั่วไป'?'class="active open"':'';?>>
+		<!-- <li <?=@$_GET['module'] == 'บริการทางทันตกรรม' && @$_GET['category'] == 'ทันตกรรมทั่วไป'?'class="active open"':'';?>>
 			<a href="contents/admin/contents/form?module=บริการทางทันตกรรม&category=ทันตกรรมทั่วไป">
 				<i class="icon-double-angle-right"></i>
 				ทันตกรรมทั่วไป
@@ -151,7 +151,7 @@
 				<i class="icon-double-angle-right"></i>
 				ศัลยกรรมช่องปากและโรคเหงือก
 			</a>
-		</li>
+		</li> -->
 	</ul>
 </li>
 
