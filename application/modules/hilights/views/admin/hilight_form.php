@@ -63,7 +63,7 @@
 			        </div> -->
 			        
 			        <div class="control-group">
-						<label class="control-label">ไฟล์แนบ</label>
+						<label class="control-label">ไฟล์แนบ th</label>
 						<div class="controls">
 							<?php if($rs->image_th):?>
 			                <img class="img" style="width:300px;" src="<?php echo (is_file($rs->image_th))? $rs->image_th : '' ?>"  /> <br><br>
@@ -74,7 +74,14 @@
 					</div>
 					
 					<div class="control-group">
-						<label class="control-label">ไฟล์แนบ</label>
+						<label class="control-label">image_alt_th</label>
+						<div class="controls">
+							<input class="input-xxlarge" type="text" name="alt_th" value="<?php echo $rs->alt_th?>" placeholder="for seo"/>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">ไฟล์แนบ en</label>
 						<div class="controls">
 							<?php if($rs->image_en):?>
 			                <img class="img" style="width:300px;" src="<?php echo (is_file($rs->image_en))? $rs->image_en : '' ?>"  /> <br><br>
@@ -83,11 +90,18 @@
 							<input class="btn btn-mini btn-info" type="button" name="browse" value="เลือกไฟล์" onclick="browser($(this).prev(),'image')" />
 						</div>
 					</div>
+					
+					<div class="control-group">
+						<label class="control-label">image_alt_en</label>
+						<div class="controls">
+							<input class="input-xxlarge" type="text" name="alt_en" value="<?php echo $rs->alt_en?>" placeholder="for seo"/>
+						</div>
+					</div>
 			        
 			        <div class="control-group">
 						<label class="control-label">ลิ้งค์ไปยัง</label>
 						<div class="controls">
-							<input class="input-xxlarge" type="text" name="url" value="<?php echo $rs->url?>" placeholder="http://www.m-society.go.th"/>
+							<input class="input-xxlarge" type="text" name="url" value="<?php echo $rs->url?>" placeholder="http://www.drtoothdentalclinic.com"/>
 						</div>
 					</div>
 					

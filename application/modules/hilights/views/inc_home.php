@@ -5,9 +5,9 @@
         <div class="item <?if($key==0){echo"active";}?>">
         	<a href="<?=$item->url?>">
     		<?if(@$this->session->userdata('lang') == "th"):?>
-		            <?=thumb($item->image_th,1050,414,1,'class="img-highlight"')?>
+		            <?=thumb($item->image_th,1050,414,1,'class="img-highlight" alt="'.$item->alt_th.'"')?>
 			<?elseif(@$this->session->userdata('lang') == "en"):?>
-		            <?=thumb($item->image_en,1050,414,1,'class="img-highlight"')?>
+		            <?=thumb($item->image_en,1050,414,1,'class="img-highlight" alt="'.$item->alt_en.'"')?>
 		    <?endif;?>
             </a>
         </div>

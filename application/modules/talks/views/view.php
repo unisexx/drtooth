@@ -14,7 +14,7 @@ $(document).ready(function(){
     <div class="row">
       <div class="col-md-7">
    	  
-   	  		<img src="uploads/talks/<?=$rs->image?>" class="picDentistTalk img-responsive"><br>
+   	  		<img src="uploads/talks/<?=$rs->image?>" alt="<?=lang_decode($rs->alt)?>" class="picDentistTalk img-responsive"><br>
    	  		
 	        <span class="title-page2"><?=lang_decode($rs->title)?></span>
 	        <div class="by">By <span class="text-by"><?=lang_decode($rs->category->name)?></span> - <?=mysql_to_th($rs->created)?></div>
