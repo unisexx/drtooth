@@ -12,7 +12,7 @@ if($this->uri->segment(1) == "home" || $this->uri->segment(1) == ""){
 if($this->uri->segment(1) == "aboutus"){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "ทำฟัน ดัดฟัน ทันตกรรมความงาม รากฟันเทียม ดัดฟัน เกี่ยวกับ";
+	$title = "เกี่ยวกับ ทำฟัน ดัดฟัน ทันตกรรมความงาม รากฟันเทียม ดัดฟัน";
 	$description = "ข้อมูลเกี่ยวกับคลินิกทันตกรรมความงาม บริการจัดฟัน ทำฟัน ดัดฟัน บริการฝังรากฟันเทียม และบริการการดูแลรักษาฟันและโรคในช่องปาก";
 	$keywords = "ทันตกรรมความงาม, จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, จัดฟันโดยไม่ต้องผ่า";
 }
@@ -51,14 +51,38 @@ if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "view" && is_n
 	$robots = "index, follow";
 	$title = "รากฟันเทียม ทำฟัน ดัดฟัน จัดฟัน พร้อมให้คำปรึกษาเรื่องทันตกรรมความงาม";
 	$description = "คุยกับหมอฟัน เรื่องทันตกรรมความความ การรักษารากฟันเทียม ทำฟัน ดัดฟัน จัดฟัน";
-	$keywords = "ทำฟัน, จัดฟัน, ดัดฟัน, รากฟันเทียม, ทันตกรรมความงาม";
+	$keywords = "รากฟันเทียม, ทำฟัน, จัดฟัน, ดัดฟัน, ทันตกรรมความงาม";
+}
+
+if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 3){
+	$content_language = "th";
+	$robots = "index, follow";
+	$title = "ฟันไม่สวย ฟันเก มาปรึกาษเรื่องจัดฟัน ดัดฟัน";
+	$description = "บริการจัดฟัน ดัดฟัน พร้อมให้คำแนะนำและปรึกษาปัญหาการจัดฟัน";
+	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, ทันตกรรมความงาม";
+}
+
+if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 15){
+	$content_language = "th";
+	$robots = "index, follow";
+	$title = "ทำฟัน ขจัดหินปูน";
+	$description = "บริการทำฟัน การขูดหินปูน ขจัดคราบหินปูนและแบคทีเรียบนผิวฟัน";
+	$keywords = "ทำฟัน, ทันตกรรมความงาม";
+}
+
+if($this->uri->segment(1) == "talks" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 19){
+	$content_language = "th";
+	$robots = "index, follow";
+	$title = "ทำฟันแตก ทำฟันหัก ทำอย่างไหร่ดี";
+	$description = "บริการทำฟัน ครอบฟันเป็นการบูรณะและปกป้องฟันที่ได้รับความเสียหาย";
+	$keywords = "ทำฟัน, ทันตกรรมความงาม, จัดฟัน";
 }
 
 // ทีมทันตแพทย์ของเรา
 if($this->uri->segment(1) == "dentists" && $this->uri->segment(2) == "" && $this->uri->segment(3) == ""){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "จัดฟันกับทันตแพทย์ ทำฟันกับทันตแพทย์ รากฟันเทียมกับทันตแพทย์ ดันฟันกับทันตแพทย์";
+	$title = "จัดฟัน ดัดฟัน ทำฟัน ทำรากฟันเทียมกับทันตแพทย์";
 	$description = "ทำฟัน จัดฟันโดยไม่ต้องผ่า ดัดฟัน รากฟันเทียม โดยทีมทันตแพทย์ผู้เชี่ยวชาญ";
 	$keywords = "ทำฟัน, จัดฟัน, ดัดฟัน, รากฟันเทียม, ทันตกรรมความงาม";
 }
@@ -76,17 +100,39 @@ if($this->uri->segment(1) == "dentists" && $this->uri->segment(2) == "" && $this
 if($this->uri->segment(1) == "dentists" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 32){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "ทพญ. อินทิรา วุฒิวิกัยการ";
-	$description = "ทพญ. อินทิรา วุฒิวิกัยการ ทันตแพทยศาศตร์บัญฑิต จุฬาลงกรณ์มหาวิทยาลัย สมาชิกทันแพทย์สภาแห่งประเทศไทย";
+	$title = "ทำฟัน กับ ทพญ. อินทิรา วุฒิวิกัยการ";
+	$description = "บริการทำฟัน ทันตกรรมทั่วไป";
 	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
 }
+if($this->uri->segment(1) == "dentists" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 29){
+	$content_language = "th";
+	$robots = "index, follow";
+	$title = "จัดฟัน ดัดฟัน กับ ทพ.ณัฐวุฒิ ศิริเสาวลักษณ์";
+	$description = "บริการจัดฟัน ดัดฟัน กับแพทย์ผู้เชี่ยวชาญทางด้านการจัดฟัน";
+	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
+}
+if($this->uri->segment(1) == "dentists" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 9){
+	$content_language = "th";
+	$robots = "index, follow";
+	$title = "รักษารากฟันเทียม กับ ทพญ.ปนัดดา โรจนโรวรรณ";
+	$description = "บริการรักษารากฟันเทียม กับแพทย์ผู้เชี่ยวชาญทางด้านทันตกรรมรากฟันเทียม";
+	$keywords = "รากฟันเทียม, จัดฟัน, ดัดฟัน, ทำฟัน, ทันตกรรมความงาม";
+}
+if($this->uri->segment(1) == "dentists" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 20){
+	$content_language = "th";
+	$robots = "index, follow";
+	$title = "รักษารากฟันเทียม กับ ทพ. ตริน รื่นรมย์";
+	$description = "บริการรักษารากฟันเทียม กับแพทย์ทันตกรรมเฉพาะทางศัลยกรรมช่องปากและใบหน้า ทันตกรรมรากเทียม";
+	$keywords = "รากฟันเทียม, จัดฟัน, ดัดฟัน, ทำฟัน, ทันตกรรมความงาม";
+}
+
 
 
 // ทีมงานของเรา
 if($this->uri->segment(1) == "staffs"){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "ทำฟันกับทีมงาน รากฟันเทียมกับทีมงาน ดันฟันกับทีมงาน จัดฟันกับทีมงาน";
+	$title = "ดัดฟัน จัดฟัน ทำฟัน รากฟันเทียมกับทีมงาน";
 	$description = "ทำฟัน จัดฟันโดยไม่ต้องผ่า ดัดฟัน รากฟันเทียม โดยทีมงานผู้ชำนาญการ";
 	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
 }
@@ -95,53 +141,63 @@ if($this->uri->segment(1) == "staffs"){
 if($this->uri->segment(1) == "patients" && $this->uri->segment(2) == "" && $this->uri->segment(3) == ""){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "ทำฟันให้คนไข้ รากฟันเทียมให้คนไข้ ดันฟันให้คนไข้ จัดฟันให้คนไข้";
+	$title = "ทำฟันให้คนไข้ รากฟันเทียมให้คนไข้ ดัดฟันให้คนไข้ จัดฟันให้คนไข้";
 	$description = "ทำฟัน จัดฟันโดยไม่ต้องผ่า ดัดฟัน รากฟันเทียม ความประทับใจจากผู้รับบริการ";
 	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
 }
 
 // คนไข้ของเรา (รายละเอียด)
-if($this->uri->segment(1) == "patients" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
+if($this->uri->segment(1) == "patients" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 3){
+//if($this->uri->segment(1) == "patients" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "";
-	$description = "";
-	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
+	$title = "จัดฟัน ดัดฟัน ความประทับใจของคุณลูกค้า";
+	$description = "คุณวีระวรรณ สุทธิเดช (กุ้ง) หนึ่งในลูกค้าที่ประทับใจในบริการ ดัดฟัน จัดฟัน";
+	$keywords = "จัดฟัน, ดัดฟัน, จัดฟันโดยไม่ต้องผ่า";
+}
+
+if($this->uri->segment(1) == "patients" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 6){
+	$content_language = "th";
+	$robots = "index, follow";
+	$title = "ดัดฟัน จัดฟัน ความประทับใจของคุณลูกค้า";
+	$description = "คุณอินทุรัตน์ ลิ้มอังกูร หนึ่งในลูกค้าที่ประทับใจในบริการ ดัดฟัน จัดฟัน";
+	$keywords = "จัดฟัน, ดัดฟัน";
 }
 
 // ติดต่อเรา
 if($this->uri->segment(1) == "contacts"){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "ติดต่อสอบถามข้อมูล ทันตกรรมความงาม จัดฟัน ทำฟัน ดัดฟัน รักษารากฟันเทียม";
+	$title = "ทันตกรรมความงาม ทำฟัน จัดฟัน ดัดฟัน รักษารากฟันเทียม ติดต่อ DR.Tooth Dental Clinic";
 	$description = "บริการสอบถามข้อมูลทันตกรรมความงามในด้านต่างๆ ได้ เช่น จัดฟันโดยไม่ต้องผ่า จัดฟันแบบใสไร้เหล็ก จัดฟันแบบเซรามิก ดัดฟัน รักษารักฟันเทียม ฯลฯ";
-	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
+	$keywords = "ทำฟัน, ดัดฟัน, รากฟันเทียม, ทันตกรรมความงาม, จัดฟัน";
 }
 
 // ภาพกิจกรรม
 if($this->uri->segment(1) == "galleries" && $this->uri->segment(2) == "" && $this->uri->segment(3) == ""){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "";
-	$description = "";
+	$title = "ภาพกิจกรรมร้านทำฟัน บริการทำฟัน จัดฟัน รากฟันเทียม";
+	$description = "รูปภาพกิจกรรมของ DR.tooth ร้านทำฟัน บริการทำฟัน ดัดฟัน รากฟันเทียม";
 	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
 }
 
 // ภาพกิจกรรม (รายละเอียด)
-if($this->uri->segment(1) == "galleries" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
+if($this->uri->segment(1) == "galleries" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 71){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "";
-	$description = "";
+	$title = "คลินิกทันตกรรม DR.tooth บริการทำฟัน จัดฟัน รากฟันเทียม ฯลฯ";
+	$description = "ภาพบรรยากาศคลินิกทันตกรรม DR.tooth บริการทันตกรรมความงามด้วยคุณภาพ";
 	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
 }
 
 // เครื่องมือของเรา
-if($this->uri->segment(1) == "tools" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
+//if($this->uri->segment(1) == "tools" && $this->uri->segment(2) == "view" && is_numeric($this->uri->segment(3))){
+if($this->uri->segment(1) == "tools" && $this->uri->segment(2) == "view" && $this->uri->segment(3) == 4){
 	$content_language = "th";
 	$robots = "index, follow";
-	$title = "";
-	$description = "";
+	$title = "เครื่องมือ XIOS XG ทำฟัน จัดฟัน รากฟันเทียม ฯลฯ";
+	$description = "เครื่องมือของคลินิก DR.tooth บริการทันตกรรมความงามด้วยคุณภาพ";
 	$keywords = "จัดฟัน, ดัดฟัน, ทำฟัน, รากฟันเทียม, ทันตกรรมความงาม";
 }
 

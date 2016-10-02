@@ -21,8 +21,8 @@ class Patients extends Public_Controller
 	
 	function view($id){
 		$data['rs'] = new Patient($id);
-		$this->template->title(lang_decode($data['rs']->name).' - DrTooth Dental Clinic');
-        $this->template->append_metadata( meta('description',lang_decode($data['rs']->detail)));
+		// $this->template->title(lang_decode($data['rs']->name).' - DrTooth Dental Clinic');
+        // $this->template->append_metadata( meta('description',lang_decode($data['rs']->detail)));
 		$this->template->build('view',$data);
 	}
 }
