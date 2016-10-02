@@ -21,6 +21,7 @@ html {
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -6794,3 +6795,13 @@ body {
 /* PINGENDO COMMENT DO NOT REMOVE */
 
 #top a{color: #fff;}
+
+
+#footseo  { color:#666; width:100%; text-align:center; }
+#footseo h1 { display:inline; padding-right:20px; font-size:12px; !important}
+
+
+.col-md-7 h2 , .col-md-6 h2, .col-md-4_ h1, .col-md-4_ h2 { font-size:14px; display:inline;}
+
+.error{color: #9c27b0; font-style:italic;}
+.col-md-7 p, .col-md-6 p, .col-md-4_ p {  display:inline;}

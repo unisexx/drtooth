@@ -15,10 +15,18 @@ class Contacts extends Public_Controller
 	function save(){
 		if($_POST)
 		{
-			$rs = new Contact($id);
-			$rs->from_array($_POST);
-			$rs->save();
-			set_notify('success', lang('save_data_complete'));	
+			$captcha = $this->session->userdata('captcha');
+            if(($_POST['captcha'] == $captcha) && !empty($captcha)){
+            	
+				$rs = new Contact($id);
+				$rs->from_array($_POST);
+				$rs->save();
+				set_notify('success', lang('save_data_complete'));	
+				
+			}else{
+                set_notify('error','กรอกรหัสไม่ถูกต้อง');
+                redirect($_SERVER['HTTP_REFERER']);
+            }				
 		}
 		redirect('contacts');
 	}

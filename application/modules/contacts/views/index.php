@@ -18,7 +18,7 @@
         
         <div class="title-page2" style="margin-top:20px; margin-bottom:20px;"><?=lang("Online_Appointment_Form")?></div>
         
-      		<form class="form-inline" method="post" action="contacts/save">
+      		<form id="contractForm" class="form-inline" method="post" action="contacts/save">
 	              <div class="form-contact_">
 	                <input type="text" class="form-contact" placeholder="Name (required) " name="name">
 	              </div>
@@ -27,8 +27,11 @@
 	              </div>
 	              <br>
 	              <textarea class="area-contact" rows="3" name="detail"></textarea>
-	              <!-- <button type="submit" class="btn-send"> -->
-	              <br clear="all">
+	              <div class="form-contact_">
+	                <img src="users/captcha" /><Br>
+	        		<input class="form-control" type="text" name="captcha" id="inputCaptcha" placeholder="captcha" style="width:105px;">
+	              </div><Br>
+	              <br clear="all"><Br>
 	              <button type="submit" style="background: #9a6fc2; border: none; color: #fff; padding: 10px 20px;"><?=lang("send_mail")?></button>
 			</form>
             
@@ -82,3 +85,30 @@
   </div>
 </div>
 <div style="clear:both; margin-bottom:80px;">&nbsp;</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#contractForm").validate({
+    rules: 
+    {
+    	name:{required: true},
+    	email:{required: true},
+        captcha:
+        {
+            required: true,
+            remote: "users/check_captcha"
+        }
+    },
+    messages:
+    {
+    	name:{required: "ฟิลด์นี้ห้ามเป็นค่าว่าง"},
+    	email:{required: "ฟิลด์นี้ห้ามเป็นค่าว่าง"},
+        captcha:
+        {
+            required: "กรุณากรอกตัวอักษรตัวที่เห็นในภาพ",
+            remote: "กรุณากรอกตัวอักษรให้ตรงกับภาพ"
+        }
+    }
+    });
+});
+</script>
